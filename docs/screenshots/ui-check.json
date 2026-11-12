@@ -1,0 +1,9 @@
+{
+  "mobile": {
+    "viewport": 390,
+    "document": 390,
+    "body": 390
+  },
+  "errors": [],
+  "forbiddenStatus": 403
+}

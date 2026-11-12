@@ -1,0 +1,135 @@
+RecallGraph verification on 2026-11-12 (Asia/Kolkata)
+Node: v25.1.0
+Docker: 29.5.2
+Environment: macOS arm64, local Colima Docker runtime
+Database tests: isolated PostgreSQL _test database per integration suite
+Command: npm run test:all
+
+> recallgraph@1.0.0 test:all
+> node scripts/test-all.mjs
+
+
+=== test:unit ===
+
+> recallgraph@1.0.0 test:unit
+> node --test tests/scoring.test.mjs tests/validation.test.mjs
+
+✔ explains and caps a strong match (0.513167ms)
+✔ distant unrelated incident scores zero (0.751291ms)
+✔ incident schema accepts severity boundaries 1 and 5 (1.634292ms)
+✔ incident schema rejects severity 0, 6 and short title (0.166625ms)
+✔ pagination schema accepts 100 and rejects 101 and negative offset (0.417958ms)
+✔ status, resolve and reopen schemas enforce required fields (0.489333ms)
+✔ user schema requires 10-character password and normalizes email (0.405084ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 278.5375
+
+=== test:sql ===
+
+> recallgraph@1.0.0 test:sql
+> node --env-file=.env scripts/test-db.mjs sql
+
+Created isolated test database recallgraph_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+✔ SQL rejects severity 0 and 6 (18.857833ms)
+✔ SQL rejects a title shorter than five characters (3.315541ms)
+✔ SQL rejects an unknown service foreign key (2.218666ms)
+✔ SQL rejects duplicate symptom labels and uppercase email (2.6075ms)
+✔ SQL rejects incomplete resolved rows and resolution before occurrence (12.284ms)
+✔ SQL rejects occurrence more than five minutes in the future (1.386ms)
+✔ SQL prevents resolved-to-open and permits controlled reopen with audit event (5.806ms)
+✔ SQL audit trigger records actor for created, status and root cause changes (7.469667ms)
+✔ SQL deletion preserves audit rows and adds deleted event (2.581375ms)
+✔ SQL resolve_incident failure is atomic (3.765583ms)
+✔ SQL transaction rollback removes incident and outbox after bad symptom link (3.34225ms)
+✔ SQL full-text search finds root cause and ranks title match higher (4.961709ms)
+✔ SQL summary and resolution views match manual counts and average (3.879ms)
+✔ SQL service dependencies reject self edges and two-cycles (4.53125ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 141.377458
+Dropped isolated test database recallgraph_test
+
+=== test:api ===
+
+> recallgraph@1.0.0 test:api
+> node --env-file=.env scripts/test-db.mjs api
+
+Created isolated test database recallgraph_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+Next test server ready at http://127.0.0.1:49547
+✔ API rejects unauthenticated incident list with 401 (665.807292ms)
+✔ API rejects wrong password with 401 (245.961709ms)
+✔ API rate limits six bad logins with 429 (1268.858041ms)
+✔ API returns JSON 400 for severity 9, short title, bad JSON, and bad UUID (821.158292ms)
+✔ API unknown service is a 4xx JSON error, never 500 (11.496209ms)
+✔ API analyst is forbidden from delete, admin, reopen, and user routes (890.743417ms)
+✔ API admin can create service and list users (30.539708ms)
+✔ API role changes revoke sessions and protect the only admin (751.808833ms)
+✔ API incident lifecycle has searchable list, actor audit, and stored resolution (954.322792ms)
+✔ API pagination and filters return consistent totals (127.812792ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5837.492792
+Dropped isolated test database recallgraph_test
+
+=== test:graph ===
+
+> recallgraph@1.0.0 test:graph
+> node --env-file=.env scripts/test-db.mjs graph
+
+Created isolated test database recallgraph_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+✔ graph outbox row is written in the incident transaction (47.05875ms)
+✔ graph drain projects incident and repeated drain is idempotent (78.307333ms)
+✔ graph outage leaves an outbox row pending with last_error and no throw (1173.758166ms)
+✔ graph functions return expected blast radius, root cause, and upstream answers (254.337417ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1908.247125
+Dropped isolated test database recallgraph_test

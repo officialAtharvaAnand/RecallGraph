@@ -77,8 +77,10 @@ export default function Home() {
   useEffect(() => {
     if (!user) return;
     let live = true;
-    const params = new URLSearchParams({ ...filters, limit: '20', offset: String(offset) });
-    for (const [key, value] of params) if (!value) params.delete(key);
+    const params = new URLSearchParams({ limit: '20', offset: String(offset) });
+    for (const [key, value] of Object.entries(filters)) {
+      if (value) params.set(key, value);
+    }
     setListLoading(true);
     api<{ items: Incident[]; total: number }>(`/api/incidents?${params}`)
       .then((value) => {

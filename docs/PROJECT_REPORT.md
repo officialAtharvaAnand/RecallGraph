@@ -245,13 +245,26 @@ The browser calls Next.js Route Handlers, which use parameterized <code>pg</code
 
 ## 14. Application screenshots
 
-[TEAM TO FILL: Insert authentic screenshots from the final running app. Capture login; dashboard metrics and resolution table; incident filters with pagination; incident drawer with audit and graph insights; resolve dialog; blast radius selector/result; admin catalog/dependencies; users and roles; graph sync panel; recent audit log; a 403 JSON response from an analyst calling an admin endpoint. Replace all older screenshots.]
+These screenshots were captured from the production build running locally on 12 November 2026, with PostgreSQL 16, Neo4j 5, and the clearly marked synthetic demonstration dataset. The [browser check](screenshots/ui-check.json) records no page errors, no horizontal overflow at 390 px, and HTTP 403 for an analyst request to the admin API. This is a local smoke test, not an accessibility audit.
 
-The old <code>docs/*.png</code> UI screenshots predate the interface rebuild and must be retaken. Diagram PNGs are rendered from the diagram source and are not application screenshots.
+| View | Evidence |
+| --- | --- |
+| Sign in | [Login screen](screenshots/01-login.png) |
+| Dashboard and resolution analysis | [Dashboard](screenshots/02-dashboard.png) |
+| Incident filtering, list, and form | [Incident library](screenshots/03-incidents.png) |
+| Graph investigation and audit | [Investigation](screenshots/04-investigation.png), [audit timeline](screenshots/04b-audit-timeline.png) |
+| Resolution workflow | [Resolution dialog](screenshots/05-resolution.png) |
+| Dependency impact | [Blast radius](screenshots/06-blast-radius.png) |
+| Admin catalog and access | [Catalog](screenshots/06-admin.png), [users and roles](screenshots/06b-users-roles.png), [graph sync](screenshots/06c-graph-sync.png) |
+| Narrow layout | [390 px mobile view](screenshots/07-mobile.png) |
+
+The [analyst denial record](screenshots/08-analyst-403.json) captures the backend 403 response. The sample incidents are synthetic and do not represent production data.
 
 ## 15. Testing results
 
 The real saved [latest.txt](test-results/latest.txt) reports Node <code>v22.19.0</code> on Windows: **7 unit + 14 SQL + 10 API + 4 graph = 35 passed, 0 failed, 0 skipped**, exit code 0. Each integration suite created, migrated, and dropped a separate <code>_test</code> database. The graph suite ran against local Neo4j and tagged/cleaned its own fixture nodes. This is a local result, not a CI result or a Node 20 result.
+
+A second [macOS verification run](test-results/macos-2026-11-12.txt) on 12 November 2026 used a fresh isolated Compose project and passed the same **35/35** tests. The Bash setup applied migrations 001–007, PostgreSQL and Neo4j became healthy, and a production build passed after the UI filter fix. The production browser run displayed 182 incidents, including 180 synthetic bulk records. Its 390 px layout and analyst 403 check are recorded in Section 14.
 
 | Named test case                                                    | Expected                                                | Observed |
 | ------------------------------------------------------------------ | ------------------------------------------------------- | -------- |
@@ -267,11 +280,11 @@ The real saved [latest.txt](test-results/latest.txt) reports Node <code>v22.19.0
 | graph drain projects incident and repeated drain is idempotent     | One node; second drain processes zero                   | Pass     |
 | graph outage leaves an outbox row pending                          | last_error recorded; recovery drains it                 | Pass     |
 
-The graph outage test injects a bad driver into the **shared worker**, not a stopped Docker container through HTTP. Visual interaction at 380px and genuine screenshots still require human verification.
+The graph outage test injects a bad driver into the **shared worker**, not a stopped Docker container through HTTP. The browser smoke test is not a keyboard or screen-reader assessment.
 
 ## 16. Limitations and future work
 
-Similarity is exact symptom-based and can miss equivalent descriptions. Future semantic embeddings could complement the explainable rules. In-process graph draining and login rate limiting are single-process designs; production would use a durable worker and shared limiter. Neo4j is eventually consistent, so graph panels can temporarily lag SQL. A shared local Neo4j instance can contain other projects' nodes; use a dedicated instance for clean graph counts. The current two-cycle check does not reject longer dependency cycles at write time; traversal queries cap depth and avoid unbounded paths. The UI still needs manual keyboard, screen-reader, and ~380px checks.
+Similarity is exact symptom-based and can miss equivalent descriptions. Future semantic embeddings could complement the explainable rules. In-process graph draining and login rate limiting are single-process designs; production would use a durable worker and shared limiter. Neo4j is eventually consistent, so graph panels can temporarily lag SQL. A shared local Neo4j instance can contain other projects' nodes; use a dedicated instance for clean graph counts. The current two-cycle check does not reject longer dependency cycles at write time; traversal queries cap depth and avoid unbounded paths. The UI still needs manual keyboard and screen-reader checks; a 390 px browser check found no horizontal overflow.
 
 ## 17. Conclusion
 
@@ -283,29 +296,29 @@ The project illustrates the trade-off between strict transactional data integrit
 
 | #   | Requirement                                      | Status      | Evidence or remaining gap                                                                                                 |
 | --- | ------------------------------------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Unique title, meaningful problem                 | Needs human | This report defines RecallGraph's problem; section-level title uniqueness needs instructor confirmation.                  |
-| 2   | Approved two-member team; both contribute DB/app | Needs human | [CONTRIBUTIONS.md](CONTRIBUTIONS.md) identifies both members and proposes a split; approval and actual work remain human. |
+| 1   | Unique title, meaningful problem                 | Partial     | This report defines RecallGraph's problem; the team reports instructor approval, but section-level uniqueness was not independently checked. |
+| 2   | Approved two-member team; both contribute DB/app | Partial     | The team reports instructor approval and joint work. [CONTRIBUTIONS.md](CONTRIBUTIONS.md) names both members; individual work evidence remains to be recorded. |
 | 3   | SQL + NoSQL implementation                       | Met         | migrations 001–007, graph model, <code>lib/graph.ts</code>, graph tests.                                                  |
 | 4   | ER, schema, NoSQL model                          | Met         | Sections 6–10, rendered diagrams, data dictionary.                                                                        |
 | 5   | CREATE/ALTER/DROP, constraints, indexes, views   | Met         | migrations 001–007 and real migration logs in latest.txt.                                                                 |
 | 6   | DML and meaningful queries                       | Met         | incident/admin routes; queries.sql and queries-output.txt.                                                                |
 | 7   | Four SQL + one NoSQL advanced features           | Met         | Transactions, views, functions, triggers, FTS/indexing, outbox; graph traversals; tests.                                  |
 | 8   | Vector search optional                           | Met         | Option 1 chosen; Section 5 explains no vector data/model/metric.                                                          |
-| 9   | Next.js interface                                | Partial     | Components and build pass; human visual/accessibility screenshots pending.                                                |
+| 9   | Next.js interface                                | Met locally | Production build and browser checks pass; keyboard and screen-reader review remain. |
 | 10  | API integration and env secrets                  | Met         | Route Handlers, lib/db.ts, docker-compose.yml, setup.ps1, .env.example.                                                   |
 | 11  | Backend auth and two roles                       | Met         | lib/auth.ts, admin routes, API 401/403 tests.                                                                             |
 | 12  | DB validation and consistency                    | Met         | CHECK/FK/triggers/functions; SQL integrity and graph outbox tests.                                                        |
-| 13  | Documentation with screenshots                   | Partial     | This report covers technical items; authentic final UI screenshots pending.                                               |
-| 14  | Git/GitHub and individual commits                | Needs human | GIT_GUIDE.md and CONTRIBUTIONS.md; no commits or repository created here.                                                 |
+| 13  | Documentation with screenshots                   | Met locally | This report includes authentic local production screenshots and current tests. |
+| 14  | Git/GitHub and individual commits                | Partial     | [Private GitHub repository](https://github.com/officialAtharvaAnand/RecallGraph) exists; the initial import and later fixes use Atharva Anand's account. Genuine individual evidence from the second member remains pending. |
 | 15  | Demo of design, UI, tests, contributions         | Needs human | VIVA_NOTES.md and latest.txt; real live presentation and member evidence pending.                                         |
 | 16  | Originality and explanation                      | Needs human | Originality checklist in CONTRIBUTIONS.md; member comprehension/policy review cannot be certified by code.                |
 | 17  | Beyond CRUD and justified DB choice              | Met         | Section 5, graph endpoints and UI, outbox and tests.                                                                      |
 
 ## 19. Team and contributions
 
-The member identities below were provided by the team. Actual responsibilities and commit hashes must be entered only after the members have done and recorded that work.
+The member identities and statement of joint work were provided by Atharva Anand. The team also reports instructor approval. Neither individual work split nor approval was independently documented here. The initial repository import is an archive import under Atharva Anand's Git identity, not proof that either member individually authored all imported files. Future commits and reviews should record actual work under each member's own account.
 
 | Member              | SRN           | Actual database contribution | Actual application contribution | Notable real commits   |
 | ------------------- | ------------- | ---------------------------- | ------------------------------- | ---------------------- |
-| Atharva Ashish Vyas | PES1UG24CS093 | [TEAM TO FILL: actual work]  | [TEAM TO FILL: actual work]     | [TEAM TO FILL: hashes] |
-| Atharva Anand       | PES1UG24CS092 | [TEAM TO FILL: actual work]  | [TEAM TO FILL: actual work]     | [TEAM TO FILL: hashes] |
+| Atharva Ashish Vyas | PES1UG24CS093 | Joint project work reported; specific contribution not yet documented | Joint project work reported; specific contribution not yet documented | Pending genuine commits/reviews from his account |
+| Atharva Anand       | PES1UG24CS092 | Joint project work reported; specific contribution not yet documented | UI filter repair, macOS setup, evidence update on this account | Initial snapshot import and current verification commit |

@@ -4,8 +4,8 @@ RecallGraph is a failure intelligence system. PostgreSQL stores the authoritativ
 
 ## Requirements
 
-- Windows PowerShell 5.1 or newer
-- Docker Desktop running Linux containers
+- Windows PowerShell 5.1 or newer, or Bash on macOS/Linux
+- A running Docker daemon (Docker Desktop or a compatible alternative)
 - Node.js 20 or newer with npm
 - Free local ports 3000, 5432, 7474, and 7687
 
@@ -23,6 +23,17 @@ Open http://localhost:3000. The setup script creates an ignored `.env` with rand
 If you already ran setup, use only `start.ps1` to reopen the app. Keep its PowerShell window open. A second Next process in the same folder may contend for `.next`; stop the earlier process first.
 
 If setup stopped at Neo4j health checks after `.env` was created, an older Docker volume may have a different password. Preserve that volume and retry with `powershell -ExecutionPolicy Bypass -File .\setup.ps1 -FreshInstance`. This keeps the generated secrets in `.env`, chooses a new Compose project and available host ports, then completes setup. You can also pass `-PostgresPort`, `-Neo4jBoltPort`, and `-Neo4jHttpPort` when choosing ports. Do not run seed or start until setup prints both demo account passwords.
+
+### macOS or Linux
+
+With the Docker daemon running, open a terminal in this folder:
+
+```bash
+./setup.sh
+./start.sh
+```
+
+The Bash setup generates private credentials in ignored `.env`, starts the databases, installs dependencies, runs migrations, creates demo accounts, and loads a small sample. Save the two generated account passwords printed at the end. It refuses to overwrite an existing `.env`; if setup was interrupted, follow the manual setup steps below using that file. To use different host database ports on the first run, prefix the setup command with `POSTGRES_PORT=... NEO4J_HTTP_PORT=... NEO4J_BOLT_PORT=...`.
 
 ## Bulk synthetic dataset for the DBMS demo
 
@@ -72,4 +83,4 @@ Analysts log, filter, investigate, and resolve incidents. The drawer shows audit
 - [Real test output](docs/test-results/latest.txt), [query output](docs/test-results/queries-output.txt), [EXPLAIN plans](docs/test-results/explain-output.txt)
 - [Contribution plan](docs/CONTRIBUTIONS.md), [Git guide](docs/GIT_GUIDE.md), [viva notes](docs/VIVA_NOTES.md)
 
-Both member names and SRNs are recorded in the report. The team must obtain course approval, record actual contributions, make genuine commits under each member's Git identity, take final UI screenshots, and rehearse the demo. No Git history or screenshots are fabricated in this ZIP.
+Both member names and SRNs are recorded in the report. The team reports instructor approval and joint work. The [production UI screenshots](docs/PROJECT_REPORT.md#14-application-screenshots) and a current macOS test run are recorded. The initial Git commit imports the ZIP under Atharva Anand's identity; it does not establish individual authorship of the imported files. Atharva Ashish Vyas has a pending collaborator invitation and should make or review genuine future work under his own identity. Both members should rehearse the demo and confirm any academic originality disclosures required by the course.

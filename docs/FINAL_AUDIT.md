@@ -1,5 +1,9 @@
 # Final adversarial audit
 
+## 12 November 2026 update
+
+The F1–F14 table below describes the earlier ZIP audit. Since then, a private [GitHub repository](https://github.com/officialAtharvaAnand/RecallGraph) was created, the original ZIP was imported as one commit under Atharva Anand's identity, and Atharva Ashish Vyas was invited as a collaborator. A macOS clean setup, 35/35 current tests, production build, browser checks, and authentic UI screenshots now exist; see [PROJECT_REPORT.md](PROJECT_REPORT.md) Sections 14–15. The incident-list filter bug found during browser verification was fixed. Individual contribution history from the second member, academic originality, and the actual course demonstration remain unverified. The instructor approval is reported by Atharva Anand, not independently inspected.
+
 This audit reports observed commands and source inspection. The 17 course requirements and every PDF sub-bullet are in [REQUIREMENTS_CHECKLIST.md](REQUIREMENTS_CHECKLIST.md). The isolated clean-install run used a separate Compose project and ports 55434, 57476, and 57690 to preserve the user's existing containers. Its application returned HTTP 200, both databases were healthy, and the recorded clean-install test run passed 34/34. A later test run on the final source passed 35/35. See `test-results/clean-install-latest.txt` and `test-results/latest.txt`.
 
 The prescribed sequence `remove .env` then `docker compose down -v` cannot work with required Compose interpolation: removing `.env` first makes Compose unable to resolve the variables. The safe audit used `.env.example` only for the _down_ command before fresh setup. No placeholder password was used to start a container. See the setup transcript summary in `REQUIREMENTS_CHECKLIST.md`.
