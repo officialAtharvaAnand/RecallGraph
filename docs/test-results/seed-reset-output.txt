@@ -1,0 +1,50 @@
+
+> recallgraph@1.0.0 db:seed:bulk
+> node --env-file=.env scripts/seed-bulk.mjs --reset
+
+Removed prior synthetic seed rows only.
+Inserted 180 SYNTHETIC incidents (PRNG seed 0x5eed2026).
+Outbox processed: 1596; pending: 0; failed: 0
+┌─────────┬──────────┬──────────┬────────────┬─────────────────────┬──────────────┬────────────────┐
+│ (index) │ services │ symptoms │ categories │ synthetic_incidents │ audit_events │ pending_outbox │
+├─────────┼──────────┼──────────┼────────────┼─────────────────────┼──────────────┼────────────────┤
+│ 0       │ 10       │ 15       │ 9          │ 180                 │ 1050         │ 0              │
+└─────────┴──────────┴──────────┴────────────┴─────────────────────┴──────────────┴────────────────┘
+┌─────────┬─────────────────┬───────────┐
+│ (index) │ status          │ incidents │
+├─────────┼─────────────────┼───────────┤
+│ 0       │ 'open'          │ 36        │
+│ 1       │ 'investigating' │ 36        │
+│ 2       │ 'resolved'      │ 108       │
+└─────────┴─────────────────┴───────────┘
+┌─────────┬──────────────────────────┬───────────┐
+│ (index) │ name                     │ incidents │
+├─────────┼──────────────────────────┼───────────┤
+│ 0       │ 'Analytics Pipeline'     │ 10        │
+│ 1       │ 'CDN Edge'               │ 10        │
+│ 2       │ 'Checkout API'           │ 65        │
+│ 3       │ 'Email Provider Adapter' │ 10        │
+│ 4       │ 'Identity Gateway'       │ 15        │
+│ 5       │ 'Inventory Service'      │ 26        │
+│ 6       │ 'Notification Worker'    │ 10        │
+│ 7       │ 'Order Orchestrator'     │ 14        │
+│ 8       │ 'Payments Gateway'       │ 10        │
+│ 9       │ 'Search Index'           │ 10        │
+└─────────┴──────────────────────────┴───────────┘
+┌─────────┬─────────────┬───────┐
+│ (index) │ label       │ nodes │
+├─────────┼─────────────┼───────┤
+│ 0       │ 'Incident'  │ 200   │
+│ 1       │ 'RootCause' │ 13    │
+│ 2       │ 'Service'   │ 21    │
+│ 3       │ 'Symptom'   │ 16    │
+└─────────┴─────────────┴───────┘
+┌─────────┬──────────────┬───────┐
+│ (index) │ type         │ edges │
+├─────────┼──────────────┼───────┤
+│ 0       │ 'AFFECTS'    │ 200   │
+│ 1       │ 'CAUSED_BY'  │ 109   │
+│ 2       │ 'DEPENDS_ON' │ 9     │
+│ 3       │ 'EXHIBITS'   │ 469   │
+└─────────┴──────────────┴───────┘
+Neo4j counts include any other data in this shared local instance.

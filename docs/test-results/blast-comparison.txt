@@ -1,0 +1,4 @@
+Single local run, including client/network overhead; not a benchmark.
+SQL rows: 4; elapsed ms: 7.158
+Neo4j rows: 4; elapsed ms: 61.947
+Both return the same dependent count: true

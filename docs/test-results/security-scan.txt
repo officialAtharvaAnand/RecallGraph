@@ -1,0 +1,5 @@
+Security/quality scan UTC: 2026-11-05T12:22:41.2516375Z
+Legacy literal credential pattern matches: 0
+Template/meta phrase matches in docs: 0
+Explicit .env.example placeholder lines: 7
+Route Handler files: 13

@@ -1,0 +1,320 @@
+RecallGraph real test run
+Started: 2026-11-05T16:30:54.736Z
+Node: v22.19.0
+Platform: win32 x64
+Database: isolated _test database created and dropped per integration suite
+Git metadata: not used
+
+> recallgraph@1.0.0 test:all
+> node scripts/test-all.mjs
+
+
+=== test:unit ===
+
+> recallgraph@1.0.0 test:unit
+> node --test tests/scoring.test.mjs tests/validation.test.mjs
+
+TAP version 13
+# Subtest: explains and caps a strong match
+ok 1 - explains and caps a strong match
+  ---
+  duration_ms: 3.4156
+  type: 'test'
+  ...
+# Subtest: distant unrelated incident scores zero
+ok 2 - distant unrelated incident scores zero
+  ---
+  duration_ms: 0.9016
+  type: 'test'
+  ...
+# Subtest: incident schema accepts severity boundaries 1 and 5
+ok 3 - incident schema accepts severity boundaries 1 and 5
+  ---
+  duration_ms: 4.6993
+  type: 'test'
+  ...
+# Subtest: incident schema rejects severity 0, 6 and short title
+ok 4 - incident schema rejects severity 0, 6 and short title
+  ---
+  duration_ms: 0.4241
+  type: 'test'
+  ...
+# Subtest: pagination schema accepts 100 and rejects 101 and negative offset
+ok 5 - pagination schema accepts 100 and rejects 101 and negative offset
+  ---
+  duration_ms: 1.2586
+  type: 'test'
+  ...
+# Subtest: status, resolve and reopen schemas enforce required fields
+ok 6 - status, resolve and reopen schemas enforce required fields
+  ---
+  duration_ms: 1.717
+  type: 'test'
+  ...
+# Subtest: user schema requires 10-character password and normalizes email
+ok 7 - user schema requires 10-character password and normalizes email
+  ---
+  duration_ms: 1.0234
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1111.2721
+
+=== test:sql ===
+
+> recallgraph@1.0.0 test:sql
+> node --env-file=.env scripts/test-db.mjs sql
+
+Created isolated test database recallgraph_p4to10_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+TAP version 13
+# Subtest: SQL rejects severity 0 and 6
+ok 1 - SQL rejects severity 0 and 6
+  ---
+  duration_ms: 64.0757
+  type: 'test'
+  ...
+# Subtest: SQL rejects a title shorter than five characters
+ok 2 - SQL rejects a title shorter than five characters
+  ---
+  duration_ms: 5.7445
+  type: 'test'
+  ...
+# Subtest: SQL rejects an unknown service foreign key
+ok 3 - SQL rejects an unknown service foreign key
+  ---
+  duration_ms: 8.1113
+  type: 'test'
+  ...
+# Subtest: SQL rejects duplicate symptom labels and uppercase email
+ok 4 - SQL rejects duplicate symptom labels and uppercase email
+  ---
+  duration_ms: 17.0224
+  type: 'test'
+  ...
+# Subtest: SQL rejects incomplete resolved rows and resolution before occurrence
+ok 5 - SQL rejects incomplete resolved rows and resolution before occurrence
+  ---
+  duration_ms: 33.7721
+  type: 'test'
+  ...
+# Subtest: SQL rejects occurrence more than five minutes in the future
+ok 6 - SQL rejects occurrence more than five minutes in the future
+  ---
+  duration_ms: 6.5535
+  type: 'test'
+  ...
+# Subtest: SQL prevents resolved-to-open and permits controlled reopen with audit event
+ok 7 - SQL prevents resolved-to-open and permits controlled reopen with audit event
+  ---
+  duration_ms: 33.6789
+  type: 'test'
+  ...
+# Subtest: SQL audit trigger records actor for created, status and root cause changes
+ok 8 - SQL audit trigger records actor for created, status and root cause changes
+  ---
+  duration_ms: 15.1158
+  type: 'test'
+  ...
+# Subtest: SQL deletion preserves audit rows and adds deleted event
+ok 9 - SQL deletion preserves audit rows and adds deleted event
+  ---
+  duration_ms: 12.9345
+  type: 'test'
+  ...
+# Subtest: SQL resolve_incident failure is atomic
+ok 10 - SQL resolve_incident failure is atomic
+  ---
+  duration_ms: 11.9213
+  type: 'test'
+  ...
+# Subtest: SQL transaction rollback removes incident and outbox after bad symptom link
+ok 11 - SQL transaction rollback removes incident and outbox after bad symptom link
+  ---
+  duration_ms: 16.4975
+  type: 'test'
+  ...
+# Subtest: SQL full-text search finds root cause and ranks title match higher
+ok 12 - SQL full-text search finds root cause and ranks title match higher
+  ---
+  duration_ms: 19.7314
+  type: 'test'
+  ...
+# Subtest: SQL summary and resolution views match manual counts and average
+ok 13 - SQL summary and resolution views match manual counts and average
+  ---
+  duration_ms: 22.3554
+  type: 'test'
+  ...
+# Subtest: SQL service dependencies reject self edges and two-cycles
+ok 14 - SQL service dependencies reject self edges and two-cycles
+  ---
+  duration_ms: 19.189
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 508.6706
+Dropped isolated test database recallgraph_p4to10_test
+
+=== test:api ===
+
+> recallgraph@1.0.0 test:api
+> node --env-file=.env scripts/test-db.mjs api
+
+Created isolated test database recallgraph_p4to10_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+Next test server ready at http://127.0.0.1:64010
+TAP version 13
+# Subtest: API rejects unauthenticated incident list with 401
+ok 1 - API rejects unauthenticated incident list with 401
+  ---
+  duration_ms: 1611.6203
+  type: 'test'
+  ...
+# Subtest: API rejects wrong password with 401
+ok 2 - API rejects wrong password with 401
+  ---
+  duration_ms: 391.2985
+  type: 'test'
+  ...
+# Subtest: API rate limits six bad logins with 429
+ok 3 - API rate limits six bad logins with 429
+  ---
+  duration_ms: 2244.9971
+  type: 'test'
+  ...
+# Subtest: API returns JSON 400 for severity 9, short title, bad JSON, and bad UUID
+ok 4 - API returns JSON 400 for severity 9, short title, bad JSON, and bad UUID
+  ---
+  duration_ms: 2782.6896
+  type: 'test'
+  ...
+# Subtest: API unknown service is a 4xx JSON error, never 500
+ok 5 - API unknown service is a 4xx JSON error, never 500
+  ---
+  duration_ms: 51.3459
+  type: 'test'
+  ...
+# Subtest: API analyst is forbidden from delete, admin, reopen, and user routes
+ok 6 - API analyst is forbidden from delete, admin, reopen, and user routes
+  ---
+  duration_ms: 3480.6076
+  type: 'test'
+  ...
+# Subtest: API admin can create service and list users
+ok 7 - API admin can create service and list users
+  ---
+  duration_ms: 176.2415
+  type: 'test'
+  ...
+# Subtest: API role changes revoke sessions and protect the only admin
+ok 8 - API role changes revoke sessions and protect the only admin
+  ---
+  duration_ms: 2697.0457
+  type: 'test'
+  ...
+# Subtest: API incident lifecycle has searchable list, actor audit, and stored resolution
+ok 9 - API incident lifecycle has searchable list, actor audit, and stored resolution
+  ---
+  duration_ms: 3131.8835
+  type: 'test'
+  ...
+# Subtest: API pagination and filters return consistent totals
+ok 10 - API pagination and filters return consistent totals
+  ---
+  duration_ms: 356.8069
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17180.8893
+Dropped isolated test database recallgraph_p4to10_test
+
+=== test:graph ===
+
+> recallgraph@1.0.0 test:graph
+> node --env-file=.env scripts/test-db.mjs graph
+
+Created isolated test database recallgraph_p4to10_test
+Applied: 001_baseline.sql
+Applied: 002_reference_data.sql
+Applied: 003_integrity_and_audit.sql
+Applied: 004_graph_outbox.sql
+Applied: 005_session_version.sql
+Applied: 006_seed_registry.sql
+Applied: 007_reference_delete_outbox.sql
+User ready: test-admin@recallgraph.local
+User ready: test-analyst@recallgraph.local
+TAP version 13
+# Subtest: graph outbox row is written in the incident transaction
+ok 1 - graph outbox row is written in the incident transaction
+  ---
+  duration_ms: 272.1454
+  type: 'test'
+  ...
+# Subtest: graph drain projects incident and repeated drain is idempotent
+ok 2 - graph drain projects incident and repeated drain is idempotent
+  ---
+  duration_ms: 393.1422
+  type: 'test'
+  ...
+# Subtest: graph outage leaves an outbox row pending with last_error and no throw
+ok 3 - graph outage leaves an outbox row pending with last_error and no throw
+  ---
+  duration_ms: 3224.441
+  type: 'test'
+  ...
+# Subtest: graph functions return expected blast radius, root cause, and upstream answers
+ok 4 - graph functions return expected blast radius, root cause, and upstream answers
+  ---
+  duration_ms: 1058.7876
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6827.3965
+Dropped isolated test database recallgraph_p4to10_test
+
+Exit code: 0

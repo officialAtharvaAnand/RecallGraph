@@ -1,0 +1,2091 @@
+
+> recallgraph@1.0.0 db:queries
+> node --env-file=.env scripts/run-queries.mjs
+
+Statement 1: SELECT
+[
+  {
+    "id": "41e6e3ad-bc87-4e46-aa6b-182a8fe78699",
+    "title": "Checkout connection pool saturation #045",
+    "rank": 0.41757137
+  },
+  {
+    "id": "6895bfb8-c7a8-48b2-8ff5-2f2425f1d3b4",
+    "title": "Checkout connection pool saturation #001",
+    "rank": 0.41757137
+  },
+  {
+    "id": "41705db4-7b91-46bc-9c25-813062ea3d44",
+    "title": "Checkout connection pool saturation #002",
+    "rank": 0.41757137
+  },
+  {
+    "id": "b8188adc-b291-4bf6-92bd-b11f38c2286a",
+    "title": "Checkout connection pool saturation #031",
+    "rank": 0.41757137
+  },
+  {
+    "id": "4d6e8c2a-0a03-4492-a6cd-de8ec728f453",
+    "title": "Checkout connection pool saturation #032",
+    "rank": 0.41757137
+  },
+  {
+    "id": "2cdad0f8-4f49-4fa8-88c8-905c5a94516c",
+    "title": "Checkout connection pool saturation #033",
+    "rank": 0.41757137
+  },
+  {
+    "id": "472dd65b-00eb-4f94-80ac-83ae4eb9d1bb",
+    "title": "Checkout connection pool saturation #034",
+    "rank": 0.41757137
+  },
+  {
+    "id": "dafc374c-c714-42e6-b694-926906cb53ce",
+    "title": "Checkout connection pool saturation #035",
+    "rank": 0.41757137
+  },
+  {
+    "id": "3899c5e4-103e-4704-8e9b-047ab6add411",
+    "title": "Checkout connection pool saturation #036",
+    "rank": 0.41757137
+  },
+  {
+    "id": "78a6c1f0-8240-4856-b463-2626df05f404",
+    "title": "Checkout connection pool saturation #011",
+    "rank": 0.41757137
+  },
+  {
+    "id": "4ebf78a8-5572-4e25-9f05-657c652cc108",
+    "title": "Checkout connection pool saturation #012",
+    "rank": 0.41757137
+  },
+  {
+    "id": "6976ec5a-5dd9-4f17-b04c-075ea78a756e",
+    "title": "Checkout connection pool saturation #013",
+    "rank": 0.41757137
+  },
+  {
+    "id": "332ba57e-bd7b-4d58-b6f3-704152dd17ef",
+    "title": "Checkout connection pool saturation #014",
+    "rank": 0.41757137
+  },
+  {
+    "id": "93aa5eb8-f542-4796-8783-e3fc6dc84d42",
+    "title": "Checkout connection pool saturation #041",
+    "rank": 0.41757137
+  },
+  {
+    "id": "f9cde9a3-0334-483b-bfcd-3b4b4bd5c0db",
+    "title": "Checkout connection pool saturation #042",
+    "rank": 0.41757137
+  },
+  {
+    "id": "c9ae9950-d4c1-487a-803d-855adf06d5c6",
+    "title": "Checkout connection pool saturation #043",
+    "rank": 0.41757137
+  },
+  {
+    "id": "e66d170f-5462-482d-a2bd-64c64e365af0",
+    "title": "Checkout connection pool saturation #044",
+    "rank": 0.41757137
+  },
+  {
+    "id": "1a90c296-08e5-4195-9f9f-a9038f00b56a",
+    "title": "Checkout connection pool saturation #015",
+    "rank": 0.41757137
+  },
+  {
+    "id": "6b874e97-0301-4111-8b6d-595063e2c5da",
+    "title": "Checkout connection pool saturation #016",
+    "rank": 0.41757137
+  },
+  {
+    "id": "0e42a29d-dd2a-43ec-b3af-16abcfb75d92",
+    "title": "Checkout connection pool saturation #003",
+    "rank": 0.41757137
+  },
+  {
+    "id": "c60e44a3-908d-423c-9e51-cc8747c9077b",
+    "title": "Checkout connection pool saturation #004",
+    "rank": 0.41757137
+  },
+  {
+    "id": "690159a4-c0b2-4248-9afd-e039cfc6c983",
+    "title": "Checkout connection pool saturation #005",
+    "rank": 0.41757137
+  },
+  {
+    "id": "01159466-ae82-4c84-8fee-4596399a5009",
+    "title": "Checkout connection pool saturation #006",
+    "rank": 0.41757137
+  },
+  {
+    "id": "66443a5c-4805-4482-94a0-6d4a377f5653",
+    "title": "Checkout connection pool saturation #021",
+    "rank": 0.41757137
+  },
+  {
+    "id": "324f9036-e15e-44b9-a45b-dbb13b699f43",
+    "title": "Checkout connection pool saturation #022",
+    "rank": 0.41757137
+  },
+  {
+    "id": "0f3dd614-9b33-4d63-b9de-24ea86483f1c",
+    "title": "Checkout connection pool saturation #023",
+    "rank": 0.41757137
+  },
+  {
+    "id": "52fbd7f4-930b-4849-b51e-830f45627131",
+    "title": "Checkout connection pool saturation #024",
+    "rank": 0.41757137
+  },
+  {
+    "id": "aad2734a-9052-428a-b604-9ab8acab12c8",
+    "title": "Checkout connection pool saturation #025",
+    "rank": 0.41757137
+  },
+  {
+    "id": "4c85e408-22d6-439a-a89a-d72dde6cb5df",
+    "title": "Checkout connection pool saturation #026",
+    "rank": 0.41757137
+  },
+  {
+    "id": "e793a377-be51-4a39-9558-dc44b3c99817",
+    "title": "Checkout connection pool saturation #046",
+    "rank": 0.41757137
+  },
+  {
+    "id": "10b34d34-a94b-4c89-9e4e-80caa908ffac",
+    "title": "Checkout connection pool saturation #050",
+    "rank": 0.20230384
+  },
+  {
+    "id": "f4a8dc01-4f87-495d-9930-9a65c2863256",
+    "title": "Checkout connection pool saturation #007",
+    "rank": 0.20230384
+  },
+  {
+    "id": "3c68e582-b0a5-43b1-b872-e2da98aa814f",
+    "title": "Checkout connection pool saturation #008",
+    "rank": 0.20230384
+  },
+  {
+    "id": "f8434c1c-f28e-4d40-9221-6c6ef53b82c5",
+    "title": "Checkout connection pool saturation #009",
+    "rank": 0.20230384
+  },
+  {
+    "id": "9d44ff27-9688-415c-8088-209d28f321e7",
+    "title": "Checkout connection pool saturation #010",
+    "rank": 0.20230384
+  },
+  {
+    "id": "322727f0-1dc2-4b47-82c0-963febfdd578",
+    "title": "Checkout connection pool saturation #017",
+    "rank": 0.20230384
+  },
+  {
+    "id": "51b8730e-d2f9-43b9-9166-dd0dfeed1434",
+    "title": "Checkout connection pool saturation #018",
+    "rank": 0.20230384
+  },
+  {
+    "id": "4c7bef3c-e957-415e-a54e-201c317ba30c",
+    "title": "Checkout connection pool saturation #019",
+    "rank": 0.20230384
+  },
+  {
+    "id": "39c984d7-7e60-4e42-a97f-37e391cbc214",
+    "title": "Checkout connection pool saturation #020",
+    "rank": 0.20230384
+  },
+  {
+    "id": "6f2836d5-5cfd-4096-9181-694d617fff26",
+    "title": "Checkout connection pool saturation #027",
+    "rank": 0.20230384
+  },
+  {
+    "id": "00317862-74b0-4379-8dfa-29838bda5179",
+    "title": "Checkout connection pool saturation #028",
+    "rank": 0.20230384
+  },
+  {
+    "id": "a8ebce83-9749-4a9b-8e7d-3b1fda3fe0d9",
+    "title": "Checkout connection pool saturation #029",
+    "rank": 0.20230384
+  },
+  {
+    "id": "c4dccf41-c2a6-4120-870e-b099a1e6995e",
+    "title": "Checkout connection pool saturation #030",
+    "rank": 0.20230384
+  },
+  {
+    "id": "b20e8523-cb5c-4cbb-857f-90cc27cc5fa9",
+    "title": "Checkout connection pool saturation #037",
+    "rank": 0.20230384
+  },
+  {
+    "id": "e9cd1b2c-ea8a-4dc9-ae75-a7c3775430a5",
+    "title": "Checkout connection pool saturation #038",
+    "rank": 0.20230384
+  },
+  {
+    "id": "565afab8-3822-4287-85e4-c105f6a98837",
+    "title": "Checkout connection pool saturation #039",
+    "rank": 0.20230384
+  },
+  {
+    "id": "17248db4-f296-486e-b431-e6bd936bcac3",
+    "title": "Checkout connection pool saturation #040",
+    "rank": 0.20230384
+  },
+  {
+    "id": "9642d7ce-cf14-48fe-b67a-f284de7623cc",
+    "title": "Checkout connection pool saturation #047",
+    "rank": 0.20230384
+  },
+  {
+    "id": "2145484c-5f8e-4694-a4c0-ede9fdf33247",
+    "title": "Checkout connection pool saturation #048",
+    "rank": 0.20230384
+  },
+  {
+    "id": "d852c8b1-7279-400d-86fd-ed3e7fa52507",
+    "title": "Checkout connection pool saturation #049",
+    "rank": 0.20230384
+  },
+  {
+    "id": "e46a7778-3f64-423e-bfe9-19f1a838eca4",
+    "title": "Checkpoint API incident",
+    "rank": 0.09910322
+  },
+  {
+    "id": "987b366a-474c-4453-a320-c6a3e392f245",
+    "title": "Repeat checkout timeout pattern",
+    "rank": 0.09910322
+  },
+  {
+    "id": "eec84710-ac2b-46dc-835b-1c8e9d535559",
+    "title": "Checkout latency during promotion",
+    "rank": 0.09910322
+  }
+]
+Statement 2: SELECT
+[
+  {
+    "name": "Checkout API",
+    "failures": "68",
+    "avg_severity": "3.59"
+  },
+  {
+    "name": "Inventory Service",
+    "failures": "26",
+    "avg_severity": "3.04"
+  },
+  {
+    "name": "Identity Gateway",
+    "failures": "15",
+    "avg_severity": "4.00"
+  },
+  {
+    "name": "Order Orchestrator",
+    "failures": "14",
+    "avg_severity": "3.00"
+  },
+  {
+    "name": "CDN Edge",
+    "failures": "10",
+    "avg_severity": "3.00"
+  },
+  {
+    "name": "Payments Gateway",
+    "failures": "10",
+    "avg_severity": "2.80"
+  },
+  {
+    "name": "Analytics Pipeline",
+    "failures": "10",
+    "avg_severity": "3.00"
+  },
+  {
+    "name": "Notification Worker",
+    "failures": "10",
+    "avg_severity": "3.00"
+  },
+  {
+    "name": "Search Index",
+    "failures": "10",
+    "avg_severity": "3.00"
+  },
+  {
+    "name": "Email Provider Adapter",
+    "failures": "10",
+    "avg_severity": "3.00"
+  }
+]
+Statement 3: SELECT
+[
+  {
+    "title": "Checkout connection pool saturation #002",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #004",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #006",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #008",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #010",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #012",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #014",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #016",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #018",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #020",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #022",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #024",
+    "severity": 4
+  },
+  {
+    "title": "Notification Worker degraded #169",
+    "severity": 4
+  },
+  {
+    "title": "Search Index degraded #170",
+    "severity": 5
+  },
+  {
+    "title": "Analytics Pipeline degraded #174",
+    "severity": 4
+  },
+  {
+    "title": "Notification Worker degraded #175",
+    "severity": 5
+  },
+  {
+    "title": "CDN Edge degraded #179",
+    "severity": 4
+  },
+  {
+    "title": "Analytics Pipeline degraded #180",
+    "severity": 5
+  },
+  {
+    "title": "Checkout connection pool saturation #026",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #028",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #030",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #032",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #034",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #036",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #038",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #040",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #042",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #044",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #046",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #048",
+    "severity": 4
+  },
+  {
+    "title": "Checkout connection pool saturation #050",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #052",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #054",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #056",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #058",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #060",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #062",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #064",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #066",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #068",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #070",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #072",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #074",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #076",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #078",
+    "severity": 4
+  },
+  {
+    "title": "Checkout authentication failures #080",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #083",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #086",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #089",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #091",
+    "severity": 3
+  },
+  {
+    "title": "Release triggered server errors #092",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #095",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #098",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #100",
+    "severity": 3
+  },
+  {
+    "title": "Release triggered server errors #101",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #104",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #107",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #109",
+    "severity": 3
+  },
+  {
+    "title": "Release triggered server errors #110",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #113",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #116",
+    "severity": 4
+  },
+  {
+    "title": "Release triggered server errors #118",
+    "severity": 3
+  },
+  {
+    "title": "Release triggered server errors #119",
+    "severity": 4
+  },
+  {
+    "title": "Email Provider Adapter degraded #124",
+    "severity": 4
+  },
+  {
+    "title": "CDN Edge degraded #125",
+    "severity": 5
+  },
+  {
+    "title": "Inventory Service degraded #129",
+    "severity": 4
+  },
+  {
+    "title": "Email Provider Adapter degraded #130",
+    "severity": 5
+  },
+  {
+    "title": "Search Index degraded #134",
+    "severity": 4
+  },
+  {
+    "title": "Inventory Service degraded #135",
+    "severity": 5
+  },
+  {
+    "title": "Notification Worker degraded #139",
+    "severity": 4
+  },
+  {
+    "title": "Search Index degraded #140",
+    "severity": 5
+  },
+  {
+    "title": "Analytics Pipeline degraded #144",
+    "severity": 4
+  },
+  {
+    "title": "Notification Worker degraded #145",
+    "severity": 5
+  },
+  {
+    "title": "CDN Edge degraded #149",
+    "severity": 4
+  },
+  {
+    "title": "Analytics Pipeline degraded #150",
+    "severity": 5
+  },
+  {
+    "title": "Email Provider Adapter degraded #154",
+    "severity": 4
+  },
+  {
+    "title": "CDN Edge degraded #155",
+    "severity": 5
+  },
+  {
+    "title": "Inventory Service degraded #159",
+    "severity": 4
+  },
+  {
+    "title": "Email Provider Adapter degraded #160",
+    "severity": 5
+  },
+  {
+    "title": "Search Index degraded #164",
+    "severity": 4
+  },
+  {
+    "title": "Inventory Service degraded #165",
+    "severity": 5
+  }
+]
+Statement 4: SELECT
+[
+  {
+    "name": "Checkout API"
+  },
+  {
+    "name": "Notification Worker"
+  },
+  {
+    "name": "Identity Gateway"
+  },
+  {
+    "name": "Payments Gateway"
+  },
+  {
+    "name": "Search Index"
+  },
+  {
+    "name": "Inventory Service"
+  },
+  {
+    "name": "Order Orchestrator"
+  },
+  {
+    "name": "Email Provider Adapter"
+  },
+  {
+    "name": "CDN Edge"
+  },
+  {
+    "name": "Analytics Pipeline"
+  }
+]
+Statement 5: SELECT
+[
+  {
+    "name": "Checkout API",
+    "recent_failures": "34"
+  },
+  {
+    "name": "Inventory Service",
+    "recent_failures": "11"
+  },
+  {
+    "name": "Identity Gateway",
+    "recent_failures": "8"
+  },
+  {
+    "name": "Order Orchestrator",
+    "recent_failures": "8"
+  },
+  {
+    "name": "Notification Worker",
+    "recent_failures": "5"
+  },
+  {
+    "name": "Email Provider Adapter",
+    "recent_failures": "5"
+  },
+  {
+    "name": "Analytics Pipeline",
+    "recent_failures": "5"
+  },
+  {
+    "name": "Search Index",
+    "recent_failures": "5"
+  },
+  {
+    "name": "CDN Edge",
+    "recent_failures": "5"
+  },
+  {
+    "name": "Payments Gateway",
+    "recent_failures": "4"
+  }
+]
+Statement 6: SELECT
+[
+  {
+    "title": "Search Index degraded #140",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Search Index degraded #170",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Search Index degraded #164",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Search Index degraded #134",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Search Index degraded #158",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Search Index degraded #128",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Search Index degraded #122",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Search Index degraded #152",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Search Index degraded #176",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Search Index degraded #146",
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Analytics Pipeline degraded #150",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Analytics Pipeline degraded #180",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Analytics Pipeline degraded #174",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Analytics Pipeline degraded #144",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Analytics Pipeline degraded #138",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Analytics Pipeline degraded #168",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Analytics Pipeline degraded #132",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Analytics Pipeline degraded #162",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Analytics Pipeline degraded #126",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Analytics Pipeline degraded #156",
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Checkout connection pool saturation #028",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #002",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #004",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #006",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #008",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #010",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #012",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #014",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #016",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #018",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #020",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #022",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #024",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #026",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #030",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #032",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #034",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #036",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #038",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #040",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #042",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #044",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #046",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #048",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout connection pool saturation #050",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #052",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #054",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #056",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #058",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #060",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #062",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #064",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #066",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #068",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #070",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #072",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #074",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #076",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #078",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkout authentication failures #080",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Checkpoint API incident",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #023",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #033",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #007",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Repeat checkout timeout pattern",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #039",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #031",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #019",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #029",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #017",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout latency during promotion",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #027",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #013",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #025",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #015",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #049",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #003",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #041",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #037",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #045",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #001",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #005",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #011",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #043",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #021",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #009",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #035",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Checkout connection pool saturation #047",
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Identity token validation outage #079",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #051",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #053",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #055",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #057",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #059",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #061",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #063",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #065",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #067",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #069",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #071",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #073",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #075",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Identity token validation outage #077",
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #098",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #119",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #118",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #100",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #091",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #109",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #087",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #081",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #090",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #114",
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Email Provider Adapter degraded #160",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Email Provider Adapter degraded #130",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Email Provider Adapter degraded #154",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Email Provider Adapter degraded #124",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Email Provider Adapter degraded #148",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Email Provider Adapter degraded #178",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Email Provider Adapter degraded #142",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Email Provider Adapter degraded #172",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Email Provider Adapter degraded #136",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Email Provider Adapter degraded #166",
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Inventory Service degraded #135",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Inventory Service degraded #165",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Inventory Service degraded #129",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #092",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #083",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #086",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #095",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Inventory Service degraded #159",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #104",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #113",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #088",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Inventory Service degraded #153",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #112",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #097",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Inventory Service degraded #123",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #094",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #082",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #108",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Inventory Service degraded #147",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Release triggered server errors #117",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Inventory Service degraded #177",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Release triggered server errors #099",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Release triggered server errors #096",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Release triggered server errors #105",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Inventory Service degraded #171",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Inventory Service degraded #141",
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "CDN Edge degraded #125",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "CDN Edge degraded #155",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "CDN Edge degraded #149",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "CDN Edge degraded #179",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "CDN Edge degraded #173",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "CDN Edge degraded #143",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "CDN Edge degraded #137",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "CDN Edge degraded #167",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "CDN Edge degraded #131",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "CDN Edge degraded #161",
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Notification Worker degraded #145",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Notification Worker degraded #175",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 5,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Notification Worker degraded #169",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Notification Worker degraded #139",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 4,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Notification Worker degraded #133",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Notification Worker degraded #163",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 3,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Notification Worker degraded #157",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Notification Worker degraded #127",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 2,
+    "severity_rank": "4"
+  },
+  {
+    "title": "Notification Worker degraded #151",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Notification Worker degraded #121",
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "severity": 1,
+    "severity_rank": "5"
+  },
+  {
+    "title": "Release triggered server errors #107",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #116",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #101",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #110",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #089",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 4,
+    "severity_rank": "1"
+  },
+  {
+    "title": "Release triggered server errors #103",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #085",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #115",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #106",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 3,
+    "severity_rank": "2"
+  },
+  {
+    "title": "Release triggered server errors #120",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #093",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #084",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #102",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 2,
+    "severity_rank": "3"
+  },
+  {
+    "title": "Release triggered server errors #111",
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "severity": 2,
+    "severity_rank": "3"
+  }
+]
+Statement 7: SELECT
+[
+  {
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "service_name": "Checkout API",
+    "incident_count": "68",
+    "active_count": "28",
+    "critical_active_count": "16",
+    "last_incident_at": "2026-11-05T08:19:46.225Z",
+    "avg_severity": "3.59"
+  },
+  {
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "service_name": "Identity Gateway",
+    "incident_count": "15",
+    "active_count": "6",
+    "critical_active_count": "6",
+    "last_incident_at": "2026-10-12T10:00:00.000Z",
+    "avg_severity": "4.00"
+  },
+  {
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "service_name": "Order Orchestrator",
+    "incident_count": "14",
+    "active_count": "4",
+    "critical_active_count": "3",
+    "last_incident_at": "2026-09-28T11:00:00.000Z",
+    "avg_severity": "3.00"
+  },
+  {
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "service_name": "Payments Gateway",
+    "incident_count": "10",
+    "active_count": "7",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-09-25T11:00:00.000Z",
+    "avg_severity": "2.80"
+  },
+  {
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "service_name": "Notification Worker",
+    "incident_count": "10",
+    "active_count": "4",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-10-19T08:00:00.000Z",
+    "avg_severity": "3.00"
+  },
+  {
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "service_name": "Email Provider Adapter",
+    "incident_count": "10",
+    "active_count": "4",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-10-28T08:00:00.000Z",
+    "avg_severity": "3.00"
+  },
+  {
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "service_name": "CDN Edge",
+    "incident_count": "10",
+    "active_count": "4",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-10-31T08:00:00.000Z",
+    "avg_severity": "3.00"
+  },
+  {
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "service_name": "Analytics Pipeline",
+    "incident_count": "10",
+    "active_count": "4",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-11-03T08:00:00.000Z",
+    "avg_severity": "3.00"
+  },
+  {
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "service_name": "Inventory Service",
+    "incident_count": "26",
+    "active_count": "9",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-10-25T08:00:00.000Z",
+    "avg_severity": "3.04"
+  },
+  {
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "service_name": "Search Index",
+    "incident_count": "10",
+    "active_count": "4",
+    "critical_active_count": "2",
+    "last_incident_at": "2026-10-22T08:00:00.000Z",
+    "avg_severity": "3.00"
+  }
+]
+Statement 8: SELECT
+[
+  {
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "service_name": "Checkout API",
+    "category_id": "0d763864-e740-4360-bbb2-d85c2a0be0e3",
+    "category_label": "Connection pool exhaustion",
+    "resolution_count": "31",
+    "avg_time_to_resolve": {
+      "hours": 5,
+      "minutes": 50,
+      "seconds": 19,
+      "milliseconds": 360.325
+    }
+  },
+  {
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "service_name": "Inventory Service",
+    "category_id": "88a2be83-4310-4e34-b546-2f9919db55b1",
+    "category_label": "Bad deployment",
+    "resolution_count": "11",
+    "avg_time_to_resolve": {
+      "hours": 5,
+      "minutes": 43,
+      "seconds": 38,
+      "milliseconds": 181.818
+    }
+  },
+  {
+    "service_id": "d7c3b263-5bed-45d1-9ae1-19a7f2657bf7",
+    "service_name": "Order Orchestrator",
+    "category_id": "88a2be83-4310-4e34-b546-2f9919db55b1",
+    "category_label": "Bad deployment",
+    "resolution_count": "10",
+    "avg_time_to_resolve": {
+      "hours": 5,
+      "minutes": 42
+    }
+  },
+  {
+    "service_id": "72321244-85f6-43d9-a85f-c53ff3157686",
+    "service_name": "Identity Gateway",
+    "category_id": "ca39ae39-3f53-41a2-9f7f-3edbbfd2e244",
+    "category_label": "Dependency outage",
+    "resolution_count": "9",
+    "avg_time_to_resolve": {
+      "hours": 4,
+      "minutes": 46,
+      "seconds": 40
+    }
+  },
+  {
+    "service_id": "48ca7f03-c41c-4f47-aae2-5fccabb0ccac",
+    "service_name": "Checkout API",
+    "category_id": "ca39ae39-3f53-41a2-9f7f-3edbbfd2e244",
+    "category_label": "Dependency outage",
+    "resolution_count": "9",
+    "avg_time_to_resolve": {
+      "hours": 5,
+      "minutes": 6,
+      "seconds": 40
+    }
+  },
+  {
+    "service_id": "41299716-a2d3-46a1-bf11-d912375a801e",
+    "service_name": "Analytics Pipeline",
+    "category_id": "9542d033-df7a-4573-880a-e0db03cb71ae",
+    "category_label": "Capacity limit",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 4,
+      "minutes": 50
+    }
+  },
+  {
+    "service_id": "998bbcf6-5867-48df-bbef-cadf33341bc1",
+    "service_name": "Email Provider Adapter",
+    "category_id": "929c5c38-0582-4886-a121-2631a14abcd6",
+    "category_label": "Third-party failure",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 6
+    }
+  },
+  {
+    "service_id": "21d7be4f-701b-4fa2-ae2c-3ecba3b182eb",
+    "service_name": "Search Index",
+    "category_id": "c20f25a3-5bd0-45b4-b91b-cd008e5a314b",
+    "category_label": "Data corruption",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 4,
+      "minutes": 40
+    }
+  },
+  {
+    "service_id": "c4acab1b-3c44-4bde-8a86-63a912e39a9f",
+    "service_name": "CDN Edge",
+    "category_id": "6e9be0f6-8435-4904-a03a-51be3110c285",
+    "category_label": "Network failure",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 9,
+      "minutes": 10
+    }
+  },
+  {
+    "service_id": "c71775a2-eea5-4d0e-afc8-94af9dd84095",
+    "service_name": "Notification Worker",
+    "category_id": "9542d033-df7a-4573-880a-e0db03cb71ae",
+    "category_label": "Capacity limit",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 7,
+      "minutes": 10
+    }
+  },
+  {
+    "service_id": "aeb76a63-f168-4d59-9d80-8b13f75cd7ef",
+    "service_name": "Inventory Service",
+    "category_id": "7f5eb3be-84f7-4019-92f6-836ac919c656",
+    "category_label": "Config error",
+    "resolution_count": "6",
+    "avg_time_to_resolve": {
+      "hours": 7,
+      "minutes": 10
+    }
+  },
+  {
+    "service_id": "72c41aa9-2e79-4894-b961-dcccc12852c7",
+    "service_name": "Payments Gateway",
+    "category_id": "88a2be83-4310-4e34-b546-2f9919db55b1",
+    "category_label": "Bad deployment",
+    "resolution_count": "3",
+    "avg_time_to_resolve": {
+      "hours": 9
+    }
+  }
+]
+Statement 9: BEGIN
+Statement 10: DO
+Statement 11: ROLLBACK
+Statement 12: EXPLAIN
+[
+  {
+    "QUERY PLAN": "Seq Scan on incidents  (cost=0.00..18.29 rows=15 width=16) (actual time=0.008..0.038 rows=53 loops=1)"
+  },
+  {
+    "QUERY PLAN": "  Filter: (search_vector @@ '''connect'' & ''pool'''::tsquery)"
+  },
+  {
+    "QUERY PLAN": "  Rows Removed by Filter: 130"
+  },
+  {
+    "QUERY PLAN": "  Buffers: shared hit=16"
+  },
+  {
+    "QUERY PLAN": "Planning:"
+  },
+  {
+    "QUERY PLAN": "  Buffers: shared hit=1"
+  },
+  {
+    "QUERY PLAN": "Planning Time: 0.038 ms"
+  },
+  {
+    "QUERY PLAN": "Execution Time: 0.062 ms"
+  }
+]
