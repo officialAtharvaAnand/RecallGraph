@@ -7,7 +7,7 @@ These answers refer to the current source. They are study prompts, not a substit
 3. **Why Neo4j?** Multi-hop service dependencies and shared-neighbour symptoms/causes map directly to graph paths. See <code>lib/graph.ts:blastRadius</code>, <code>upstreamSuspects</code>, and <code>likelyRootCauses</code>.
 4. **Could SQL alone answer blast radius?** Yes. <code>scripts/compare-blast.mjs</code> uses a recursive CTE and returns the same four dependents. Neo4j is chosen for expressing several evolving traversals, not a proven speed win.
 5. **Why no vector database?** This is the course's SQL+NoSQL option. <code>lib/scoring.ts</code> uses exact, explainable signals. No embeddings or vector metrics are present.
-6. **What are the main ER entities?** Users, services, incidents, symptoms, root-cause categories, events, join tables, outbox, and seed/migration metadata. See <code>docs/er-diagram.svg</code>.
+6. **What are the main ER entities?** Users, services, incidents, symptoms, root-cause categories, events, join tables, outbox, and seed/migration metadata. See <code>docs/recallgraph-chen-er-diagram.svg</code> and <code>docs/recallgraph-schema-diagram.svg</code>.
 7. **How are many-to-many symptoms modeled?** <code>incident_symptoms</code> has a composite key and two foreign keys. See migration 001.
 8. **Is the schema normalized?** Core facts are separated into 3NF tables. Audit title/incident UUID snapshots deliberately preserve history after deletion; search_vector is a generated derivative. See report Section 7 and migration 003.
 9. **Which SQL transaction feature is live?** <code>lib/db.ts:withTransaction</code> and <code>lib/transaction-core.mjs</code> wrap writes, sets actor context, commits or rolls back. API routes use it.

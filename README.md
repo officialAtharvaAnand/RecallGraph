@@ -79,7 +79,7 @@ Analysts log, filter, investigate, and resolve incidents. The drawer shows audit
 
 ## Project evidence and team work
 
-- [Project report](docs/PROJECT_REPORT.md), [ER diagram](docs/er-diagram.svg), [graph model](docs/graph-model.svg), [data dictionary](docs/DATA_DICTIONARY.md)
+- [Project report](docs/PROJECT_REPORT.md), [Chen ER diagram](docs/recallgraph-chen-er-diagram.svg), [PostgreSQL schema diagram](docs/recallgraph-schema-diagram.svg), [data dictionary](docs/DATA_DICTIONARY.md)
 - [Real test output](docs/test-results/latest.txt), [query output](docs/test-results/queries-output.txt), [EXPLAIN plans](docs/test-results/explain-output.txt)
 - [Contribution plan](docs/CONTRIBUTIONS.md), [Git guide](docs/GIT_GUIDE.md), [viva notes](docs/VIVA_NOTES.md)
 

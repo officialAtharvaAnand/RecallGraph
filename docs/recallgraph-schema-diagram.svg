@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1160" viewBox="0 0 1800 1160">
+<style>
+  .title { font: 700 34px Arial, sans-serif; fill: #102a43; }
+  .subtitle { font: 16px Arial, sans-serif; fill: #52606d; }
+  .table { font: 700 20px Arial, sans-serif; fill: white; }
+  .field { font: 15px Arial, sans-serif; fill: #102a43; }
+  .tag { font: 700 11px Arial, sans-serif; fill: #52606d; letter-spacing: .7px; }
+  .card { stroke: #9fb3c8; stroke-width: 1.2; }
+  .shadow { fill: #d9e2ec; opacity: .5; }
+  .rel { stroke: #e76f51; stroke-width: 2.2; fill: none; }
+  .rel-label { font: 700 12px Arial, sans-serif; fill: #9c3c25; }
+  .label-bg { fill: #fff8f5; stroke: #f4b49f; stroke-width: .7; }
+  .legend { font: 13px Arial, sans-serif; fill: #52606d; }
+</style>
+<rect width="100%" height="100%" fill="#f7fafc"/>
+<rect x="0" y="0" width="100%" height="112" fill="#e9f4f6"/>
+<text x="70" y="54" class="title">RecallGraph — Physical PostgreSQL Schema Diagram</text>
+<text x="70" y="84" class="subtitle">Actual table structure, data types, key constraints, generated search field, and integration support tables</text>
+<g><path d="M 400 285 L 820 318" class="rel"/><path d="M 802.8 307.6 L 820.0 318.0" class="rel"/><path d="M 802.1 316.6 L 820.0 318.0" class="rel"/><path d="M 801.4 325.6 L 820.0 318.0" class="rel"/>
+      <rect x="553.0" y="287.5" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="610.0" y="303.5" class="rel-label" text-anchor="middle">created_by</text></g><g><path d="M 780 260 L 820 300" class="rel"/><path d="M 813.6 280.9 L 820.0 300.0" class="rel"/><path d="M 807.3 287.3 L 820.0 300.0" class="rel"/><path d="M 800.9 293.6 L 820.0 300.0" class="rel"/>
+      <rect x="743.0" y="266.0" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="800.0" y="282.0" class="rel-label" text-anchor="middle">service_id</text></g><g><path d="M 990 470 L 990 590" class="rel"/><path d="M 999.0 572.0 L 990.0 590.0" class="rel"/><path d="M 990.0 572.0 L 990.0 590.0" class="rel"/><path d="M 981.0 572.0 L 990.0 590.0" class="rel"/>
+      <rect x="933.0" y="516.0" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="990.0" y="532.0" class="rel-label" text-anchor="middle">category</text></g><g><path d="M 1160 350 L 1200 315" class="rel"/><path d="M 1180.5 320.1 L 1200.0 315.0" class="rel"/><path d="M 1186.5 326.9 L 1200.0 315.0" class="rel"/><path d="M 1192.4 333.6 L 1200.0 315.0" class="rel"/>
+      <rect x="1123.0" y="318.5" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="1180.0" y="334.5" class="rel-label" text-anchor="middle">audit</text></g><g><path d="M 400 650 L 440 665" class="rel"/><path d="M 426.3 650.3 L 440.0 665.0" class="rel"/><path d="M 423.1 658.7 L 440.0 665.0" class="rel"/><path d="M 420.0 667.1 L 440.0 665.0" class="rel"/>
+      <rect x="363.0" y="643.5" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="420.0" y="659.5" class="rel-label" text-anchor="middle">symptom</text></g><g><path d="M 610 590 L 820 480" class="rel"/><path d="M 799.9 480.4 L 820.0 480.0" class="rel"/><path d="M 804.1 488.4 L 820.0 480.0" class="rel"/><path d="M 808.2 496.3 L 820.0 480.0" class="rel"/>
+      <rect x="658.0" y="521.0" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="715.0" y="537.0" class="rel-label" text-anchor="middle">incident</text></g><g><path d="M 610 260 L 1200 650" class="rel"/><path d="M 1189.9 632.6 L 1200.0 650.0" class="rel"/><path d="M 1185.0 640.1 L 1200.0 650.0" class="rel"/><path d="M 1180.0 647.6 L 1200.0 650.0" class="rel"/>
+      <rect x="848.0" y="441.0" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="905.0" y="457.0" class="rel-label" text-anchor="middle">dependency</text></g><g><path d="M 990 505 L 420 865" class="rel"/><path d="M 440.0 863.0 L 420.0 865.0" class="rel"/><path d="M 435.2 855.4 L 420.0 865.0" class="rel"/><path d="M 430.4 847.8 L 420.0 865.0" class="rel"/>
+      <rect x="648.0" y="671.0" width="114" height="22" rx="8" class="label-bg"/>
+      <text x="705.0" y="687.0" class="rel-label" text-anchor="middle">trigger → outbox</text></g><g id="users">
+      <rect class="shadow" x="65" y="171" width="340" height="203" rx="10"/>
+      <rect class="card" x="60" y="165" width="340" height="203" rx="10" fill="#ffffff"/>
+      <path d="M 60 175 Q 60 165 70 165 H 390 Q 400 165 400 175 V 223 H 60Z" fill="#0b3c5d"/>
+      <text x="78" y="202" class="table">users</text>
+      <rect x="61" y="224" width="338" height="29" fill="#fff3cd"/><text x="78" y="249" class="field">id uuid</text><text x="384" y="249" class="tag" text-anchor="end">PK</text><rect x="61" y="253" width="338" height="29" fill="#ffffff"/><text x="78" y="278" class="field">email citext</text><text x="384" y="278" class="tag" text-anchor="end">UNIQUE</text><rect x="61" y="282" width="338" height="29" fill="#ffffff"/><text x="78" y="307" class="field">password_hash text</text><text x="384" y="307" class="tag" text-anchor="end"></text><rect x="61" y="311" width="338" height="29" fill="#ffffff"/><text x="78" y="336" class="field">role user_role</text><text x="384" y="336" class="tag" text-anchor="end"></text><rect x="61" y="340" width="338" height="29" fill="#ffffff"/><text x="78" y="365" class="field">token_version int</text><text x="384" y="365" class="tag" text-anchor="end"></text>
+    </g><g id="services">
+      <rect class="shadow" x="445" y="171" width="340" height="145" rx="10"/>
+      <rect class="card" x="440" y="165" width="340" height="145" rx="10" fill="#ffffff"/>
+      <path d="M 440 175 Q 440 165 450 165 H 770 Q 780 165 780 175 V 223 H 440Z" fill="#0b3c5d"/>
+      <text x="458" y="202" class="table">services</text>
+      <rect x="441" y="224" width="338" height="29" fill="#fff3cd"/><text x="458" y="249" class="field">id uuid</text><text x="764" y="249" class="tag" text-anchor="end">PK</text><rect x="441" y="253" width="338" height="29" fill="#ffffff"/><text x="458" y="278" class="field">name text</text><text x="764" y="278" class="tag" text-anchor="end">UNIQUE</text><rect x="441" y="282" width="338" height="29" fill="#ffffff"/><text x="458" y="307" class="field">owner_team text</text><text x="764" y="307" class="tag" text-anchor="end"></text>
+    </g><g id="incidents">
+      <rect class="shadow" x="825" y="171" width="340" height="319" rx="10"/>
+      <rect class="card" x="820" y="165" width="340" height="319" rx="10" fill="#ffffff"/>
+      <path d="M 820 175 Q 820 165 830 165 H 1150 Q 1160 165 1160 175 V 223 H 820Z" fill="#0b3c5d"/>
+      <text x="838" y="202" class="table">incidents</text>
+      <rect x="821" y="224" width="338" height="29" fill="#fff3cd"/><text x="838" y="249" class="field">id uuid</text><text x="1144" y="249" class="tag" text-anchor="end">PK</text><rect x="821" y="253" width="338" height="29" fill="#e3f8f5"/><text x="838" y="278" class="field">service_id uuid</text><text x="1144" y="278" class="tag" text-anchor="end">FK</text><rect x="821" y="282" width="338" height="29" fill="#e3f8f5"/><text x="838" y="307" class="field">root_cause_category_id uuid</text><text x="1144" y="307" class="tag" text-anchor="end">FK</text><rect x="821" y="311" width="338" height="29" fill="#e3f8f5"/><text x="838" y="336" class="field">created_by uuid</text><text x="1144" y="336" class="tag" text-anchor="end">FK</text><rect x="821" y="340" width="338" height="29" fill="#ffffff"/><text x="838" y="365" class="field">search_vector tsvector</text><text x="1144" y="365" class="tag" text-anchor="end">GENERATED</text><rect x="821" y="369" width="338" height="29" fill="#ffffff"/><text x="838" y="394" class="field">status incident_status</text><text x="1144" y="394" class="tag" text-anchor="end"></text><rect x="821" y="398" width="338" height="29" fill="#ffffff"/><text x="838" y="423" class="field">severity smallint</text><text x="1144" y="423" class="tag" text-anchor="end">CHECK</text><rect x="821" y="427" width="338" height="29" fill="#ffffff"/><text x="838" y="452" class="field">occurred_at timestamptz</text><text x="1144" y="452" class="tag" text-anchor="end"></text><rect x="821" y="456" width="338" height="29" fill="#ffffff"/><text x="838" y="481" class="field">resolved_at timestamptz</text><text x="1144" y="481" class="tag" text-anchor="end"></text>
+    </g><g id="incident_events">
+      <rect class="shadow" x="1205" y="171" width="340" height="232" rx="10"/>
+      <rect class="card" x="1200" y="165" width="340" height="232" rx="10" fill="#ffffff"/>
+      <path d="M 1200 175 Q 1200 165 1210 165 H 1530 Q 1540 165 1540 175 V 223 H 1200Z" fill="#0b3c5d"/>
+      <text x="1218" y="202" class="table">incident_events</text>
+      <rect x="1201" y="224" width="338" height="29" fill="#fff3cd"/><text x="1218" y="249" class="field">id bigint</text><text x="1524" y="249" class="tag" text-anchor="end">PK</text><rect x="1201" y="253" width="338" height="29" fill="#ffffff"/><text x="1218" y="278" class="field">incident_id uuid</text><text x="1524" y="278" class="tag" text-anchor="end">SNAPSHOT</text><rect x="1201" y="282" width="338" height="29" fill="#e3f8f5"/><text x="1218" y="307" class="field">actor_id uuid</text><text x="1524" y="307" class="tag" text-anchor="end">FK</text><rect x="1201" y="311" width="338" height="29" fill="#ffffff"/><text x="1218" y="336" class="field">event_type text</text><text x="1524" y="336" class="tag" text-anchor="end"></text><rect x="1201" y="340" width="338" height="29" fill="#ffffff"/><text x="1218" y="365" class="field">detail jsonb</text><text x="1524" y="365" class="tag" text-anchor="end"></text><rect x="1201" y="369" width="338" height="29" fill="#ffffff"/><text x="1218" y="394" class="field">happened_at timestamptz</text><text x="1524" y="394" class="tag" text-anchor="end"></text>
+    </g><g id="symptoms">
+      <rect class="shadow" x="65" y="596" width="340" height="116" rx="10"/>
+      <rect class="card" x="60" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
+      <path d="M 60 600 Q 60 590 70 590 H 390 Q 400 590 400 600 V 648 H 60Z" fill="#0b3c5d"/>
+      <text x="78" y="627" class="table">symptoms</text>
+      <rect x="61" y="649" width="338" height="29" fill="#fff3cd"/><text x="78" y="674" class="field">id uuid</text><text x="384" y="674" class="tag" text-anchor="end">PK</text><rect x="61" y="678" width="338" height="29" fill="#ffffff"/><text x="78" y="703" class="field">label text</text><text x="384" y="703" class="tag" text-anchor="end">UNIQUE</text>
+    </g><g id="incident_symptoms">
+      <rect class="shadow" x="445" y="596" width="340" height="116" rx="10"/>
+      <rect class="card" x="440" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
+      <path d="M 440 600 Q 440 590 450 590 H 770 Q 780 590 780 600 V 648 H 440Z" fill="#0b3c5d"/>
+      <text x="458" y="627" class="table">incident_symptoms</text>
+      <rect x="441" y="649" width="338" height="29" fill="#fff3cd"/><text x="458" y="674" class="field">incident_id uuid</text><text x="764" y="674" class="tag" text-anchor="end">PK · FK</text><rect x="441" y="678" width="338" height="29" fill="#fff3cd"/><text x="458" y="703" class="field">symptom_id uuid</text><text x="764" y="703" class="tag" text-anchor="end">PK · FK</text>
+    </g><g id="root_cause_categories">
+      <rect class="shadow" x="825" y="596" width="340" height="116" rx="10"/>
+      <rect class="card" x="820" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
+      <path d="M 820 600 Q 820 590 830 590 H 1150 Q 1160 590 1160 600 V 648 H 820Z" fill="#0b3c5d"/>
+      <text x="838" y="627" class="table">root_cause_categories</text>
+      <rect x="821" y="649" width="338" height="29" fill="#fff3cd"/><text x="838" y="674" class="field">id uuid</text><text x="1144" y="674" class="tag" text-anchor="end">PK</text><rect x="821" y="678" width="338" height="29" fill="#ffffff"/><text x="838" y="703" class="field">label text</text><text x="1144" y="703" class="tag" text-anchor="end">UNIQUE</text>
+    </g><g id="service_dependencies">
+      <rect class="shadow" x="1205" y="596" width="340" height="116" rx="10"/>
+      <rect class="card" x="1200" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
+      <path d="M 1200 600 Q 1200 590 1210 590 H 1530 Q 1540 590 1540 600 V 648 H 1200Z" fill="#0b3c5d"/>
+      <text x="1218" y="627" class="table">service_dependencies</text>
+      <rect x="1201" y="649" width="338" height="29" fill="#fff3cd"/><text x="1218" y="674" class="field">service_id uuid</text><text x="1524" y="674" class="tag" text-anchor="end">PK · FK</text><rect x="1201" y="678" width="338" height="29" fill="#fff3cd"/><text x="1218" y="703" class="field">depends_on_service_id uuid</text><text x="1524" y="703" class="tag" text-anchor="end">PK · FK</text>
+    </g><g id="graph_outbox">
+      <rect class="shadow" x="255" y="871" width="340" height="232" rx="10"/>
+      <rect class="card" x="250" y="865" width="340" height="232" rx="10" fill="#eef2f7"/>
+      <path d="M 250 875 Q 250 865 260 865 H 580 Q 590 865 590 875 V 923 H 250Z" fill="#087e8b"/>
+      <text x="268" y="902" class="table">graph_outbox</text>
+      <rect x="251" y="924" width="338" height="29" fill="#fff3cd"/><text x="268" y="949" class="field">id bigint</text><text x="574" y="949" class="tag" text-anchor="end">PK</text><rect x="251" y="953" width="338" height="29" fill="#eef2f7"/><text x="268" y="978" class="field">op text</text><text x="574" y="978" class="tag" text-anchor="end">CHECK</text><rect x="251" y="982" width="338" height="29" fill="#eef2f7"/><text x="268" y="1007" class="field">payload jsonb</text><text x="574" y="1007" class="tag" text-anchor="end"></text><rect x="251" y="1011" width="338" height="29" fill="#eef2f7"/><text x="268" y="1036" class="field">attempts int</text><text x="574" y="1036" class="tag" text-anchor="end"></text><rect x="251" y="1040" width="338" height="29" fill="#eef2f7"/><text x="268" y="1065" class="field">last_error text</text><text x="574" y="1065" class="tag" text-anchor="end"></text><rect x="251" y="1069" width="338" height="29" fill="#eef2f7"/><text x="268" y="1094" class="field">processed_at timestamptz</text><text x="574" y="1094" class="tag" text-anchor="end"></text>
+    </g><g id="schema_migrations">
+      <rect class="shadow" x="685" y="871" width="340" height="116" rx="10"/>
+      <rect class="card" x="680" y="865" width="340" height="116" rx="10" fill="#eef2f7"/>
+      <path d="M 680 875 Q 680 865 690 865 H 1010 Q 1020 865 1020 875 V 923 H 680Z" fill="#087e8b"/>
+      <text x="698" y="902" class="table">schema_migrations</text>
+      <rect x="681" y="924" width="338" height="29" fill="#fff3cd"/><text x="698" y="949" class="field">version text</text><text x="1004" y="949" class="tag" text-anchor="end">PK</text><rect x="681" y="953" width="338" height="29" fill="#eef2f7"/><text x="698" y="978" class="field">applied_at timestamptz</text><text x="1004" y="978" class="tag" text-anchor="end"></text>
+    </g><g id="synthetic_seed_rows">
+      <rect class="shadow" x="1065" y="871" width="340" height="116" rx="10"/>
+      <rect class="card" x="1060" y="865" width="340" height="116" rx="10" fill="#eef2f7"/>
+      <path d="M 1060 875 Q 1060 865 1070 865 H 1390 Q 1400 865 1400 875 V 923 H 1060Z" fill="#087e8b"/>
+      <text x="1078" y="902" class="table">synthetic_seed_rows</text>
+      <rect x="1061" y="924" width="338" height="29" fill="#fff3cd"/><text x="1078" y="949" class="field">table_name text</text><text x="1384" y="949" class="tag" text-anchor="end">PK</text><rect x="1061" y="953" width="338" height="29" fill="#fff3cd"/><text x="1078" y="978" class="field">record_id uuid</text><text x="1384" y="978" class="tag" text-anchor="end">PK</text>
+    </g>
+<rect x="52" y="1083" width="1696" height="48" rx="12" fill="#e9f4f6"/>
+<text x="76" y="1113" class="legend">Core tables are white; operational/support tables are grey. PostgreSQL triggers write graph_outbox rows in the same transaction as incident and catalogue changes.</text>
+</svg>

@@ -76,9 +76,11 @@ The course's vector option is optional. This project uses Option 1: PostgreSQL p
 
 ## 6. ER diagram
 
-The rendered diagram is [er-diagram.svg](er-diagram.svg) ([PNG](er-diagram.png)); [render-diagrams.py](render-diagrams.py) is its source. It marks primary/foreign keys, unique labels, the 1:N relationships, and crow's-foot many ends. <code>incident_events.incident_id</code> is intentionally a UUID snapshot after the incident FK was dropped so deletion cannot erase audit history. Infrastructure tables are also shown.
+Use the [Chen notation ER diagram](recallgraph-chen-er-diagram.svg) for a conventional conceptual ER presentation: rectangles are entities, diamonds are relationships, ovals are attributes, and underlined attributes are primary keys. <code>incident_events.incident_id</code> is intentionally a UUID snapshot after the incident FK was dropped so deletion cannot erase audit history.
 
 ## 7. Relational schema
+
+Use the [presentation physical schema diagram](recallgraph-schema-diagram.svg) to explain actual PostgreSQL data types, generated full-text search, support tables, and the transactional graph outbox.
 
 ```text
 users(id PK, email UQ, password_hash, role, token_version, created_at)
@@ -145,7 +147,7 @@ The clean isolated migration command applied 001–005 at Checkpoint 1; later co
 
 ## 10. NoSQL (Neo4j) implementation
 
-The rendered graph model is [graph-model.svg](graph-model.svg) ([PNG](graph-model.png)); [render-diagrams.py](render-diagrams.py) is its source. Nodes: <code>Incident(id,title,severity,occurredAt)</code>, <code>Service(id,name)</code>, <code>Symptom(id,label)</code>, <code>RootCause(id,label)</code>. Edges: <code>Incident-[:AFFECTS]->Service</code>, <code>Incident-[:EXHIBITS]->Symptom</code>, <code>Incident-[:CAUSED_BY]->RootCause</code>, <code>Service-[:DEPENDS_ON]->Service</code>. The root-cause node represents a category, not free text.
+Neo4j nodes are <code>Incident(id,title,severity,occurredAt)</code>, <code>Service(id,name)</code>, <code>Symptom(id,label)</code>, and <code>RootCause(id,label)</code>. Edges are <code>Incident-[:AFFECTS]->Service</code>, <code>Incident-[:EXHIBITS]->Symptom</code>, <code>Incident-[:CAUSED_BY]->RootCause</code>, and <code>Service-[:DEPENDS_ON]->Service</code>. The root-cause node represents a category, not free text.
 
 <code>scripts/init-graph.mjs</code> creates uniqueness constraints on each node label's <code>id</code> and an index on <code>Incident.occurredAt</code>; it ran successfully against local Neo4j. <code>lib/graph.ts</code> traverses dependencies up to three hops for blast radius, walks from symptoms to past categorized incidents for likely causes, checks upstream incidents in a six-hour window, and counts symptom pairs. <code>/api/similar</code> hydrates graph candidates from PostgreSQL and <code>lib/scoring.ts:scoreMatch</code> gives 35 points per shared symptom, 25 for same service, 15 for severity gap ≤1, and 10 for the last 90 days, capped at 100; reasons are returned with the score. It is a rule-based relevance rank, not a learned probability.
 
