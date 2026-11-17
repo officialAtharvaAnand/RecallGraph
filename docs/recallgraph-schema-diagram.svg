@@ -1,105 +1,200 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1160" viewBox="0 0 1800 1160">
-<style>
-  .title { font: 700 34px Arial, sans-serif; fill: #102a43; }
-  .subtitle { font: 16px Arial, sans-serif; fill: #52606d; }
-  .table { font: 700 20px Arial, sans-serif; fill: white; }
-  .field { font: 15px Arial, sans-serif; fill: #102a43; }
-  .tag { font: 700 11px Arial, sans-serif; fill: #52606d; letter-spacing: .7px; }
-  .card { stroke: #9fb3c8; stroke-width: 1.2; }
-  .shadow { fill: #d9e2ec; opacity: .5; }
-  .rel { stroke: #e76f51; stroke-width: 2.2; fill: none; }
-  .rel-label { font: 700 12px Arial, sans-serif; fill: #9c3c25; }
-  .label-bg { fill: #fff8f5; stroke: #f4b49f; stroke-width: .7; }
-  .legend { font: 13px Arial, sans-serif; fill: #52606d; }
-</style>
-<rect width="100%" height="100%" fill="#f7fafc"/>
-<rect x="0" y="0" width="100%" height="112" fill="#e9f4f6"/>
-<text x="70" y="54" class="title">RecallGraph — Physical PostgreSQL Schema Diagram</text>
-<text x="70" y="84" class="subtitle">Actual table structure, data types, key constraints, generated search field, and integration support tables</text>
-<g><path d="M 400 285 L 820 318" class="rel"/><path d="M 802.8 307.6 L 820.0 318.0" class="rel"/><path d="M 802.1 316.6 L 820.0 318.0" class="rel"/><path d="M 801.4 325.6 L 820.0 318.0" class="rel"/>
-      <rect x="553.0" y="287.5" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="610.0" y="303.5" class="rel-label" text-anchor="middle">created_by</text></g><g><path d="M 780 260 L 820 300" class="rel"/><path d="M 813.6 280.9 L 820.0 300.0" class="rel"/><path d="M 807.3 287.3 L 820.0 300.0" class="rel"/><path d="M 800.9 293.6 L 820.0 300.0" class="rel"/>
-      <rect x="743.0" y="266.0" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="800.0" y="282.0" class="rel-label" text-anchor="middle">service_id</text></g><g><path d="M 990 470 L 990 590" class="rel"/><path d="M 999.0 572.0 L 990.0 590.0" class="rel"/><path d="M 990.0 572.0 L 990.0 590.0" class="rel"/><path d="M 981.0 572.0 L 990.0 590.0" class="rel"/>
-      <rect x="933.0" y="516.0" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="990.0" y="532.0" class="rel-label" text-anchor="middle">category</text></g><g><path d="M 1160 350 L 1200 315" class="rel"/><path d="M 1180.5 320.1 L 1200.0 315.0" class="rel"/><path d="M 1186.5 326.9 L 1200.0 315.0" class="rel"/><path d="M 1192.4 333.6 L 1200.0 315.0" class="rel"/>
-      <rect x="1123.0" y="318.5" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="1180.0" y="334.5" class="rel-label" text-anchor="middle">audit</text></g><g><path d="M 400 650 L 440 665" class="rel"/><path d="M 426.3 650.3 L 440.0 665.0" class="rel"/><path d="M 423.1 658.7 L 440.0 665.0" class="rel"/><path d="M 420.0 667.1 L 440.0 665.0" class="rel"/>
-      <rect x="363.0" y="643.5" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="420.0" y="659.5" class="rel-label" text-anchor="middle">symptom</text></g><g><path d="M 610 590 L 820 480" class="rel"/><path d="M 799.9 480.4 L 820.0 480.0" class="rel"/><path d="M 804.1 488.4 L 820.0 480.0" class="rel"/><path d="M 808.2 496.3 L 820.0 480.0" class="rel"/>
-      <rect x="658.0" y="521.0" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="715.0" y="537.0" class="rel-label" text-anchor="middle">incident</text></g><g><path d="M 610 260 L 1200 650" class="rel"/><path d="M 1189.9 632.6 L 1200.0 650.0" class="rel"/><path d="M 1185.0 640.1 L 1200.0 650.0" class="rel"/><path d="M 1180.0 647.6 L 1200.0 650.0" class="rel"/>
-      <rect x="848.0" y="441.0" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="905.0" y="457.0" class="rel-label" text-anchor="middle">dependency</text></g><g><path d="M 990 505 L 420 865" class="rel"/><path d="M 440.0 863.0 L 420.0 865.0" class="rel"/><path d="M 435.2 855.4 L 420.0 865.0" class="rel"/><path d="M 430.4 847.8 L 420.0 865.0" class="rel"/>
-      <rect x="648.0" y="671.0" width="114" height="22" rx="8" class="label-bg"/>
-      <text x="705.0" y="687.0" class="rel-label" text-anchor="middle">trigger → outbox</text></g><g id="users">
-      <rect class="shadow" x="65" y="171" width="340" height="203" rx="10"/>
-      <rect class="card" x="60" y="165" width="340" height="203" rx="10" fill="#ffffff"/>
-      <path d="M 60 175 Q 60 165 70 165 H 390 Q 400 165 400 175 V 223 H 60Z" fill="#0b3c5d"/>
-      <text x="78" y="202" class="table">users</text>
-      <rect x="61" y="224" width="338" height="29" fill="#fff3cd"/><text x="78" y="249" class="field">id uuid</text><text x="384" y="249" class="tag" text-anchor="end">PK</text><rect x="61" y="253" width="338" height="29" fill="#ffffff"/><text x="78" y="278" class="field">email citext</text><text x="384" y="278" class="tag" text-anchor="end">UNIQUE</text><rect x="61" y="282" width="338" height="29" fill="#ffffff"/><text x="78" y="307" class="field">password_hash text</text><text x="384" y="307" class="tag" text-anchor="end"></text><rect x="61" y="311" width="338" height="29" fill="#ffffff"/><text x="78" y="336" class="field">role user_role</text><text x="384" y="336" class="tag" text-anchor="end"></text><rect x="61" y="340" width="338" height="29" fill="#ffffff"/><text x="78" y="365" class="field">token_version int</text><text x="384" y="365" class="tag" text-anchor="end"></text>
-    </g><g id="services">
-      <rect class="shadow" x="445" y="171" width="340" height="145" rx="10"/>
-      <rect class="card" x="440" y="165" width="340" height="145" rx="10" fill="#ffffff"/>
-      <path d="M 440 175 Q 440 165 450 165 H 770 Q 780 165 780 175 V 223 H 440Z" fill="#0b3c5d"/>
-      <text x="458" y="202" class="table">services</text>
-      <rect x="441" y="224" width="338" height="29" fill="#fff3cd"/><text x="458" y="249" class="field">id uuid</text><text x="764" y="249" class="tag" text-anchor="end">PK</text><rect x="441" y="253" width="338" height="29" fill="#ffffff"/><text x="458" y="278" class="field">name text</text><text x="764" y="278" class="tag" text-anchor="end">UNIQUE</text><rect x="441" y="282" width="338" height="29" fill="#ffffff"/><text x="458" y="307" class="field">owner_team text</text><text x="764" y="307" class="tag" text-anchor="end"></text>
-    </g><g id="incidents">
-      <rect class="shadow" x="825" y="171" width="340" height="319" rx="10"/>
-      <rect class="card" x="820" y="165" width="340" height="319" rx="10" fill="#ffffff"/>
-      <path d="M 820 175 Q 820 165 830 165 H 1150 Q 1160 165 1160 175 V 223 H 820Z" fill="#0b3c5d"/>
-      <text x="838" y="202" class="table">incidents</text>
-      <rect x="821" y="224" width="338" height="29" fill="#fff3cd"/><text x="838" y="249" class="field">id uuid</text><text x="1144" y="249" class="tag" text-anchor="end">PK</text><rect x="821" y="253" width="338" height="29" fill="#e3f8f5"/><text x="838" y="278" class="field">service_id uuid</text><text x="1144" y="278" class="tag" text-anchor="end">FK</text><rect x="821" y="282" width="338" height="29" fill="#e3f8f5"/><text x="838" y="307" class="field">root_cause_category_id uuid</text><text x="1144" y="307" class="tag" text-anchor="end">FK</text><rect x="821" y="311" width="338" height="29" fill="#e3f8f5"/><text x="838" y="336" class="field">created_by uuid</text><text x="1144" y="336" class="tag" text-anchor="end">FK</text><rect x="821" y="340" width="338" height="29" fill="#ffffff"/><text x="838" y="365" class="field">search_vector tsvector</text><text x="1144" y="365" class="tag" text-anchor="end">GENERATED</text><rect x="821" y="369" width="338" height="29" fill="#ffffff"/><text x="838" y="394" class="field">status incident_status</text><text x="1144" y="394" class="tag" text-anchor="end"></text><rect x="821" y="398" width="338" height="29" fill="#ffffff"/><text x="838" y="423" class="field">severity smallint</text><text x="1144" y="423" class="tag" text-anchor="end">CHECK</text><rect x="821" y="427" width="338" height="29" fill="#ffffff"/><text x="838" y="452" class="field">occurred_at timestamptz</text><text x="1144" y="452" class="tag" text-anchor="end"></text><rect x="821" y="456" width="338" height="29" fill="#ffffff"/><text x="838" y="481" class="field">resolved_at timestamptz</text><text x="1144" y="481" class="tag" text-anchor="end"></text>
-    </g><g id="incident_events">
-      <rect class="shadow" x="1205" y="171" width="340" height="232" rx="10"/>
-      <rect class="card" x="1200" y="165" width="340" height="232" rx="10" fill="#ffffff"/>
-      <path d="M 1200 175 Q 1200 165 1210 165 H 1530 Q 1540 165 1540 175 V 223 H 1200Z" fill="#0b3c5d"/>
-      <text x="1218" y="202" class="table">incident_events</text>
-      <rect x="1201" y="224" width="338" height="29" fill="#fff3cd"/><text x="1218" y="249" class="field">id bigint</text><text x="1524" y="249" class="tag" text-anchor="end">PK</text><rect x="1201" y="253" width="338" height="29" fill="#ffffff"/><text x="1218" y="278" class="field">incident_id uuid</text><text x="1524" y="278" class="tag" text-anchor="end">SNAPSHOT</text><rect x="1201" y="282" width="338" height="29" fill="#e3f8f5"/><text x="1218" y="307" class="field">actor_id uuid</text><text x="1524" y="307" class="tag" text-anchor="end">FK</text><rect x="1201" y="311" width="338" height="29" fill="#ffffff"/><text x="1218" y="336" class="field">event_type text</text><text x="1524" y="336" class="tag" text-anchor="end"></text><rect x="1201" y="340" width="338" height="29" fill="#ffffff"/><text x="1218" y="365" class="field">detail jsonb</text><text x="1524" y="365" class="tag" text-anchor="end"></text><rect x="1201" y="369" width="338" height="29" fill="#ffffff"/><text x="1218" y="394" class="field">happened_at timestamptz</text><text x="1524" y="394" class="tag" text-anchor="end"></text>
-    </g><g id="symptoms">
-      <rect class="shadow" x="65" y="596" width="340" height="116" rx="10"/>
-      <rect class="card" x="60" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
-      <path d="M 60 600 Q 60 590 70 590 H 390 Q 400 590 400 600 V 648 H 60Z" fill="#0b3c5d"/>
-      <text x="78" y="627" class="table">symptoms</text>
-      <rect x="61" y="649" width="338" height="29" fill="#fff3cd"/><text x="78" y="674" class="field">id uuid</text><text x="384" y="674" class="tag" text-anchor="end">PK</text><rect x="61" y="678" width="338" height="29" fill="#ffffff"/><text x="78" y="703" class="field">label text</text><text x="384" y="703" class="tag" text-anchor="end">UNIQUE</text>
-    </g><g id="incident_symptoms">
-      <rect class="shadow" x="445" y="596" width="340" height="116" rx="10"/>
-      <rect class="card" x="440" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
-      <path d="M 440 600 Q 440 590 450 590 H 770 Q 780 590 780 600 V 648 H 440Z" fill="#0b3c5d"/>
-      <text x="458" y="627" class="table">incident_symptoms</text>
-      <rect x="441" y="649" width="338" height="29" fill="#fff3cd"/><text x="458" y="674" class="field">incident_id uuid</text><text x="764" y="674" class="tag" text-anchor="end">PK · FK</text><rect x="441" y="678" width="338" height="29" fill="#fff3cd"/><text x="458" y="703" class="field">symptom_id uuid</text><text x="764" y="703" class="tag" text-anchor="end">PK · FK</text>
-    </g><g id="root_cause_categories">
-      <rect class="shadow" x="825" y="596" width="340" height="116" rx="10"/>
-      <rect class="card" x="820" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
-      <path d="M 820 600 Q 820 590 830 590 H 1150 Q 1160 590 1160 600 V 648 H 820Z" fill="#0b3c5d"/>
-      <text x="838" y="627" class="table">root_cause_categories</text>
-      <rect x="821" y="649" width="338" height="29" fill="#fff3cd"/><text x="838" y="674" class="field">id uuid</text><text x="1144" y="674" class="tag" text-anchor="end">PK</text><rect x="821" y="678" width="338" height="29" fill="#ffffff"/><text x="838" y="703" class="field">label text</text><text x="1144" y="703" class="tag" text-anchor="end">UNIQUE</text>
-    </g><g id="service_dependencies">
-      <rect class="shadow" x="1205" y="596" width="340" height="116" rx="10"/>
-      <rect class="card" x="1200" y="590" width="340" height="116" rx="10" fill="#ffffff"/>
-      <path d="M 1200 600 Q 1200 590 1210 590 H 1530 Q 1540 590 1540 600 V 648 H 1200Z" fill="#0b3c5d"/>
-      <text x="1218" y="627" class="table">service_dependencies</text>
-      <rect x="1201" y="649" width="338" height="29" fill="#fff3cd"/><text x="1218" y="674" class="field">service_id uuid</text><text x="1524" y="674" class="tag" text-anchor="end">PK · FK</text><rect x="1201" y="678" width="338" height="29" fill="#fff3cd"/><text x="1218" y="703" class="field">depends_on_service_id uuid</text><text x="1524" y="703" class="tag" text-anchor="end">PK · FK</text>
-    </g><g id="graph_outbox">
-      <rect class="shadow" x="255" y="871" width="340" height="232" rx="10"/>
-      <rect class="card" x="250" y="865" width="340" height="232" rx="10" fill="#eef2f7"/>
-      <path d="M 250 875 Q 250 865 260 865 H 580 Q 590 865 590 875 V 923 H 250Z" fill="#087e8b"/>
-      <text x="268" y="902" class="table">graph_outbox</text>
-      <rect x="251" y="924" width="338" height="29" fill="#fff3cd"/><text x="268" y="949" class="field">id bigint</text><text x="574" y="949" class="tag" text-anchor="end">PK</text><rect x="251" y="953" width="338" height="29" fill="#eef2f7"/><text x="268" y="978" class="field">op text</text><text x="574" y="978" class="tag" text-anchor="end">CHECK</text><rect x="251" y="982" width="338" height="29" fill="#eef2f7"/><text x="268" y="1007" class="field">payload jsonb</text><text x="574" y="1007" class="tag" text-anchor="end"></text><rect x="251" y="1011" width="338" height="29" fill="#eef2f7"/><text x="268" y="1036" class="field">attempts int</text><text x="574" y="1036" class="tag" text-anchor="end"></text><rect x="251" y="1040" width="338" height="29" fill="#eef2f7"/><text x="268" y="1065" class="field">last_error text</text><text x="574" y="1065" class="tag" text-anchor="end"></text><rect x="251" y="1069" width="338" height="29" fill="#eef2f7"/><text x="268" y="1094" class="field">processed_at timestamptz</text><text x="574" y="1094" class="tag" text-anchor="end"></text>
-    </g><g id="schema_migrations">
-      <rect class="shadow" x="685" y="871" width="340" height="116" rx="10"/>
-      <rect class="card" x="680" y="865" width="340" height="116" rx="10" fill="#eef2f7"/>
-      <path d="M 680 875 Q 680 865 690 865 H 1010 Q 1020 865 1020 875 V 923 H 680Z" fill="#087e8b"/>
-      <text x="698" y="902" class="table">schema_migrations</text>
-      <rect x="681" y="924" width="338" height="29" fill="#fff3cd"/><text x="698" y="949" class="field">version text</text><text x="1004" y="949" class="tag" text-anchor="end">PK</text><rect x="681" y="953" width="338" height="29" fill="#eef2f7"/><text x="698" y="978" class="field">applied_at timestamptz</text><text x="1004" y="978" class="tag" text-anchor="end"></text>
-    </g><g id="synthetic_seed_rows">
-      <rect class="shadow" x="1065" y="871" width="340" height="116" rx="10"/>
-      <rect class="card" x="1060" y="865" width="340" height="116" rx="10" fill="#eef2f7"/>
-      <path d="M 1060 875 Q 1060 865 1070 865 H 1390 Q 1400 865 1400 875 V 923 H 1060Z" fill="#087e8b"/>
-      <text x="1078" y="902" class="table">synthetic_seed_rows</text>
-      <rect x="1061" y="924" width="338" height="29" fill="#fff3cd"/><text x="1078" y="949" class="field">table_name text</text><text x="1384" y="949" class="tag" text-anchor="end">PK</text><rect x="1061" y="953" width="338" height="29" fill="#fff3cd"/><text x="1078" y="978" class="field">record_id uuid</text><text x="1384" y="978" class="tag" text-anchor="end">PK</text>
-    </g>
-<rect x="52" y="1083" width="1696" height="48" rx="12" fill="#e9f4f6"/>
-<text x="76" y="1113" class="legend">Core tables are white; operational/support tables are grey. PostgreSQL triggers write graph_outbox rows in the same transaction as incident and catalogue changes.</text>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1190.5511811023623" height="841.8897637795277" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1190 841" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1190.5511811023623" height="841.8897637795277"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-841)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1190.5511811023623" height="841.8897637795277" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="314.14859055118114" y="803.8897637795277" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1607) scale(1,-1)">RECALLGRAPH — FAILURE INTELLIGENCE SYSTEM</text>
+			<text x="478.26359055118115" y="784.8897637795277" style="font-family: Helvetica-Bold; font-size: 10.5px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1569) scale(1,-1)">Atharva Ashish Vyas  |  SRN: PES1UG24CS093</text>
+			<text x="496.15559055118115" y="768.8897637795277" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1537) scale(1,-1)">Atharva Anand  |  SRN: PES1UG24CS092</text>
+			<path d="M 24,757.889764 L 1166.551181,757.889764 Z" style="stroke: rgb(79%,83%,88%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="28" y="739.8897637795277" style="font-family: Helvetica-Bold; font-size: 12.5px;fill: rgb(60%,20%,7%); stroke:none;" transform="translate(0,1479) scale(1,-1)">17 NOVEMBER 2026  |  RELATIONAL SCHEMA  |  THIRD NORMAL FORM (3NF)</text>
+			<path d="M 746.833333,529 L 746.833333,610 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 746.833333,610 L 122.583333,610 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 122.583333,610 L 122.583333,650 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="122.5833 650, 119.3833 643, 125.7833 643" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 292.833333,529 L 292.833333,550 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 292.833333,550 L 86.666667,550 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 86.666667,550 L 86.666667,585 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="86.66667 585, 83.46667 578, 89.86667 578" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 973.833333,529 L 973.833333,565 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 973.833333,565 L 508,565 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 508,565 L 508,585 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="508 585, 504.8 578, 511.2 578" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 118,436 L 118,460 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 118,460 L 65.833333,460 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 65.833333,460 L 65.833333,495 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="65.83333 495, 62.63333 488, 69.03333 488" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 298,436 L 298,445 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 298,445 L 899.75,445 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 899.75,445 L 899.75,585 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="899.75 585, 896.55 578, 902.95 578" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 506,436 L 506,475 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 506,475 L 86.666667,475 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 86.666667,475 L 86.666667,585 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="86.66667 585, 83.46667 578, 89.86667 578" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 686,436 L 686,457 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 686,457 L 86.666667,457 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 86.666667,457 L 86.666667,585 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="86.66667 585, 83.46667 578, 89.86667 578" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<path d="M 932.214286,436 L 932.214286,370 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 932.214286,370 L 122.583333,370 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<path d="M 122.583333,370 L 122.583333,650 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<polygon points="122.5833 650, 119.3833 643, 125.7833 643" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,17%,12%); fill-rule: evenodd;"/>
+			<text x="28" y="690" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1380) scale(1,-1)">USERS</text>
+			<rect x="28" y="650" width="1135" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 217.166667,650 L 217.166667,681 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 406.333333,650 L 406.333333,681 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 595.5,650 L 595.5,681 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 784.666667,650 L 784.666667,681 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 973.833333,650 L 973.833333,681 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="119.56073333333333" y="662.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">id</text>
+			<path d="M 119.319333,659.8 L 125.847333,659.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="303.6274" y="662.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">email</text>
+			<text x="395.1333333333333" y="673" style="font-family: Helvetica-Bold; font-size: 4.8px;fill: rgb(48%,22%,92%); stroke:none;" transform="translate(0,1346) scale(1,-1)">UQ</text>
+			<text x="477.1064666666666" y="662.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">password_hash</text>
+			<text x="684.4155333333333" y="662.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">role</text>
+			<text x="858.085" y="662.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">token_version</text>
+			<text x="1052.3516666666665" y="662.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1325) scale(1,-1)">created_at</text>
+			<text x="28" y="625" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1250) scale(1,-1)">SERVICES</text>
+			<rect x="28" y="585" width="352" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 145.333333,585 L 145.333333,616 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 262.666667,585 L 262.666667,616 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="83.64406666666666" y="597.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">id</text>
+			<path d="M 83.402667,594.8 L 89.930667,594.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="195.4966" y="597.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">name</text>
+			<text x="251.46666666666664" y="608" style="font-family: Helvetica-Bold; font-size: 4.8px;fill: rgb(48%,22%,92%); stroke:none;" transform="translate(0,1216) scale(1,-1)">UQ</text>
+			<text x="302.6265333333333" y="597.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">owner_team</text>
+			<text x="420" y="625" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1250) scale(1,-1)">ROOT_CAUSE_CATEGORIES</text>
+			<rect x="420" y="585" width="352" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 596,585 L 596,616 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="504.9774" y="597.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">id</text>
+			<path d="M 504.736,594.8 L 511.264,594.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="676.8192" y="597.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">label</text>
+			<text x="760.8" y="608" style="font-family: Helvetica-Bold; font-size: 4.8px;fill: rgb(48%,22%,92%); stroke:none;" transform="translate(0,1216) scale(1,-1)">UQ</text>
+			<text x="812" y="625" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1250) scale(1,-1)">SYMPTOMS</text>
+			<rect x="812" y="585" width="351" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 987.5,585 L 987.5,616 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="896.7274" y="597.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">id</text>
+			<path d="M 896.486,594.8 L 903.014,594.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="1068.0692" y="597.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1195) scale(1,-1)">label</text>
+			<text x="1151.8" y="608" style="font-family: Helvetica-Bold; font-size: 4.8px;fill: rgb(48%,22%,92%); stroke:none;" transform="translate(0,1216) scale(1,-1)">UQ</text>
+			<text x="28" y="538" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1076) scale(1,-1)">INCIDENTS</text>
+			<rect x="28" y="495" width="1135" height="34" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 103.666667,495 L 103.666667,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 179.333333,495 L 179.333333,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 255,495 L 255,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 330.666667,495 L 330.666667,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 406.333333,495 L 406.333333,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 482,495 L 482,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 557.666667,495 L 557.666667,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 633.333333,495 L 633.333333,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 709,495 L 709,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 784.666667,495 L 784.666667,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 860.333333,495 L 860.333333,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 936,495 L 936,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 1011.666667,495 L 1011.666667,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 1087.333333,495 L 1087.333333,529 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="62.810733333333346" y="509.4" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">id</text>
+			<path d="M 62.569333,506.3 L 69.097333,506.3 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="136.2096" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">title</text>
+			<text x="203.1892666666667" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">summary</text>
+			<text x="277.52993333333336" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,1018) scale(1,-1)">service_id</text>
+			<path d="M 276.513333,506.3 L 309.153333,506.3 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="356.787" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">severity</text>
+			<text x="435.0954666666667" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">status</text>
+			<text x="503.0135333333334" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">root_cause</text>
+			<text x="577.548" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">occurred_at</text>
+			<text x="653.5920666666667" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">resolved_at</text>
+			<text x="730.0135333333334" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,1018) scale(1,-1)">created_by</text>
+			<path d="M 730.513333,506.3 L 763.153333,506.3 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="806.435" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">created_at</text>
+			<text x="881.1530666666667" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">updated_at</text>
+			<text x="947.6869333333334" y="509.4" style="font-family: Helvetica; font-size: 4.9px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,1018) scale(1,-1)">root_cause_category_id</text>
+			<path d="M 947.961333,506.3 L 999.705333,506.3 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="1028.148" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">search_vector</text>
+			<text x="1102.4886666666666" y="509.4" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,1018) scale(1,-1)">synthetic_seed</text>
+			<text x="28" y="445" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,890) scale(1,-1)">INCIDENT_SYMPTOMS</text>
+			<rect x="28" y="405" width="360" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 208,405 L 208,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="100.0514" y="417.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,835) scale(1,-1)">incident_id</text>
+			<path d="M 100.048,414.8 L 135.952,414.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 100.048,414.8 L 135.952,414.8 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="277.974" y="417.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,835) scale(1,-1)">symptom_id</text>
+			<path d="M 281.68,414.8 L 314.32,414.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 281.68,414.8 L 314.32,414.8 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="416" y="445" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,890) scale(1,-1)">SERVICE_DEPENDENCIES</text>
+			<rect x="416" y="405" width="360" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 596,405 L 596,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="489.3672" y="417.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,835) scale(1,-1)">service_id</text>
+			<path d="M 489.68,414.8 L 522.32,414.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 489.68,414.8 L 522.32,414.8 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="647.4508" y="417.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,835) scale(1,-1)">depends_on_service_id</text>
+			<path d="M 651.728,414.8 L 720.272,414.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 651.728,414.8 L 720.272,414.8 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="804" y="445" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,890) scale(1,-1)">INCIDENT_EVENTS</text>
+			<rect x="804" y="405" width="359" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 855.285714,405 L 855.285714,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 906.571429,405 L 906.571429,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 957.857143,405 L 957.857143,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 1009.142857,405 L 1009.142857,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 1060.428571,405 L 1060.428571,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 1111.714286,405 L 1111.714286,436 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="826.6202571428571" y="417.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">id</text>
+			<path d="M 826.378857,414.8 L 832.906857,414.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="866.6426906426907" y="417.9" style="font-family: Helvetica; font-size: 5.977355977355977px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">incident_id</text>
+			<text x="920.1204857142858" y="417.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(85%,17%,12%); stroke:none;" transform="translate(0,835) scale(1,-1)">actor_id</text>
+			<path d="M 919.158286,414.8 L 945.270286,414.8 Z" style="stroke: rgb(85%,17%,12%); stroke-linecap: butt; stroke-width: 0.55; stroke-dasharray: 1.5, 1.5;"/>
+			<text x="967.417326007326" y="417.9" style="font-family: Helvetica; font-size: 6.575091575091574px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">event_type</text>
+			<text x="1026.6597142857142" y="417.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">detail</text>
+			<text x="1068.6235264735265" y="417.9" style="font-family: Helvetica; font-size: 5.977355977355977px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">happened_at</text>
+			<text x="1123.740042857143" y="417.9" style="font-family: Helvetica; font-size: 4.9px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,835) scale(1,-1)">incident_title</text>
+			<text x="28" y="340" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,680) scale(1,-1)">GRAPH_OUTBOX</text>
+			<rect x="28" y="300" width="735" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 133,300 L 133,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 238,300 L 238,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 343,300 L 343,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 448,300 L 448,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 553,300 L 553,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 658,300 L 658,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="77.4774" y="312.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">id</text>
+			<path d="M 77.236,309.8 L 83.764,309.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="181.7192" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">op</text>
+			<text x="278.5932" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">payload</text>
+			<text x="382.461" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">attempts</text>
+			<text x="486.1418" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">last_error</text>
+			<text x="589.435" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">created_at</text>
+			<text x="690.0898" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">processed_at</text>
+			<text x="803" y="340" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,680) scale(1,-1)">SCHEMA_MIGRATIONS</text>
+			<rect x="803" y="300" width="360" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 983,300 L 983,331 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="880.9062" y="312.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">version</text>
+			<path d="M 881.576,309.8 L 904.424,309.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="1057.3124" y="312.9" style="font-family: Helvetica; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,625) scale(1,-1)">applied_at</text>
+			<text x="28" y="250" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,500) scale(1,-1)">SYNTHETIC_SEED_ROWS</text>
+			<rect x="28" y="210" width="360" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 208,210 L 208,241 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="99.2932" y="222.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,445) scale(1,-1)">table_name</text>
+			<path d="M 101.68,219.8 L 134.32,219.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="282.5062" y="222.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,445) scale(1,-1)">record_id</text>
+			<path d="M 283.312,219.8 L 312.688,219.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="416" y="250" style="font-family: Helvetica-Bold; font-size: 7.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,500) scale(1,-1)">SYNTHETIC_SEED_EDGES</text>
+			<rect x="416" y="210" width="360" height="31" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<path d="M 596,210 L 596,241 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="489.3672" y="222.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,445) scale(1,-1)">service_id</text>
+			<path d="M 489.68,219.8 L 522.32,219.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<text x="647.4508" y="222.9" style="font-family: Helvetica-Bold; font-size: 6.8px;fill: rgb(6%,9%,15%); stroke:none;" transform="translate(0,445) scale(1,-1)">depends_on_service_id</text>
+			<path d="M 651.728,219.8 L 720.272,219.8 Z" style="stroke: rgb(6%,9%,15%); stroke-linecap: butt; stroke-width: 0.55;"/>
+			<path d="M 28,72 L 1162.551181,72 Z" style="stroke: rgb(79%,83%,88%); stroke-linecap: butt; stroke-width: 0.7;"/>
+			<text x="28" y="46" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,92) scale(1,-1)">Underlined = primary key  |  Red dashed underline = foreign key  |  UQ = unique  |  Red connector arrows point from foreign key to referenced primary key  |  incident_events.incident_id is a retained historical snapshot.</text>
+			<text x="28" y="29" style="font-family: Helvetica; font-size: 7.5px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,58) scale(1,-1)">PostgreSQL source of truth · graph_outbox queues retryable Neo4j projection updates</text>
+		</g>
+	</g>
 </svg>

@@ -80,7 +80,7 @@ Use the [Chen notation ER diagram](recallgraph-chen-er-diagram.svg) for a conven
 
 ## 7. Relational schema
 
-Use the [presentation physical schema diagram](recallgraph-schema-diagram.svg) to explain actual PostgreSQL data types, generated full-text search, support tables, and the transactional graph outbox.
+Use the [presentation physical schema diagram](recallgraph-schema-diagram.svg) ([PDF](RecallGraph-PostgreSQL-Schema-Diagram.pdf)) to explain actual PostgreSQL data types, generated full-text search, support tables, and the transactional graph outbox.
 
 ```text
 users(id PK, email UQ, password_hash, role, token_version, created_at)
